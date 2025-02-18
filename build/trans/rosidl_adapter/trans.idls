@@ -1,0 +1,4 @@
+/home/wbb/ros2_ws/build/trans/rosidl_adapter/trans:msg/ActuatorCmds.idl
+/home/wbb/ros2_ws/build/trans/rosidl_adapter/trans:msg/TouchSensor.idl
+/home/wbb/ros2_ws/build/trans/rosidl_adapter/trans:srv/SimulationReset.idl
+/home/wbb/ros2_ws/build/trans/rosidl_adapter/trans:srv/GaitSwitch.idl

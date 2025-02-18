@@ -1,0 +1,9 @@
+{
+  "package_name": "trans",
+  "non_idl_tuples": [
+    "/home/wbb/ros2_ws/src/trans:msgs/ActuatorCmds.msg",
+    "/home/wbb/ros2_ws/src/trans:msgs/TouchSensor.msg",
+    "/home/wbb/ros2_ws/src/trans:srv/SimulationReset.srv",
+    "/home/wbb/ros2_ws/src/trans:srv/GaitSwitch.srv"
+  ]
+}
