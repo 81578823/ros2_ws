@@ -1,0 +1,41 @@
+[0.682s] Invoking command in '/home/wbb/ros2_ws/src/sim': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim build --build-base /home/wbb/ros2_ws/build/sim/build install --record /home/wbb/ros2_ws/build/sim/install.log --single-version-externally-managed install_data
+[0.775s] running egg_info
+[0.776s] creating ../../build/sim/sim.egg-info
+[0.777s] writing ../../build/sim/sim.egg-info/PKG-INFO
+[0.777s] writing dependency_links to ../../build/sim/sim.egg-info/dependency_links.txt
+[0.777s] writing entry points to ../../build/sim/sim.egg-info/entry_points.txt
+[0.777s] writing requirements to ../../build/sim/sim.egg-info/requires.txt
+[0.777s] writing top-level names to ../../build/sim/sim.egg-info/top_level.txt
+[0.777s] writing manifest file '../../build/sim/sim.egg-info/SOURCES.txt'
+[0.777s] reading manifest file '../../build/sim/sim.egg-info/SOURCES.txt'
+[0.777s] writing manifest file '../../build/sim/sim.egg-info/SOURCES.txt'
+[0.777s] running build
+[0.777s] running build_py
+[0.778s] creating /home/wbb/ros2_ws/build/sim/build
+[0.778s] creating /home/wbb/ros2_ws/build/sim/build/lib
+[0.778s] creating /home/wbb/ros2_ws/build/sim/build/lib/sim
+[0.778s] copying sim/__init__.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
+[0.778s] copying sim/simulate.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
+[0.778s] copying sim/sim_publisher.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
+[0.778s] copying sim/main_sim.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
+[0.778s] running install
+[0.778s] running install_lib
+[0.778s] creating /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
+[0.778s] copying /home/wbb/ros2_ws/build/sim/build/lib/sim/__init__.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
+[0.778s] copying /home/wbb/ros2_ws/build/sim/build/lib/sim/simulate.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
+[0.778s] copying /home/wbb/ros2_ws/build/sim/build/lib/sim/sim_publisher.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
+[0.778s] copying /home/wbb/ros2_ws/build/sim/build/lib/sim/main_sim.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
+[0.778s] byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/__init__.py to __init__.cpython-310.pyc
+[0.778s] byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/simulate.py to simulate.cpython-310.pyc
+[0.778s] byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/sim_publisher.py to sim_publisher.cpython-310.pyc
+[0.779s] byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/main_sim.py to main_sim.cpython-310.pyc
+[0.779s] running install_data
+[0.779s] creating /home/wbb/ros2_ws/install/sim/share/sim/launch
+[0.779s] copying launch/sim.launch.py -> /home/wbb/ros2_ws/install/sim/share/sim/launch
+[0.779s] copying package.xml -> /home/wbb/ros2_ws/install/sim/share/sim
+[0.779s] running install_egg_info
+[0.780s] Copying ../../build/sim/sim.egg-info to /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim-0.0.0-py3.10.egg-info
+[0.780s] running install_scripts
+[0.790s] Installing main_sim script to /home/wbb/ros2_ws/install/sim/lib/sim
+[0.790s] writing list of installed files to '/home/wbb/ros2_ws/build/sim/install.log'
+[0.805s] Invoked command in '/home/wbb/ros2_ws/src/sim' returned '0': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim build --build-base /home/wbb/ros2_ws/build/sim/build install --record /home/wbb/ros2_ws/build/sim/install.log --single-version-externally-managed install_data
