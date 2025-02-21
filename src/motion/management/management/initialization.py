@@ -47,8 +47,8 @@ class Initialization:
         try:
             model_package = self.config_["model"]["package"]
             urdf_relative_path = self.config_["model"]["urdf"]
-            print(f"Model package: {model_package}")
-            print(f"URDF relative path: {urdf_relative_path}")
+            # print(f"Model package: {model_package}")
+            # print(f"URDF relative path: {urdf_relative_path}")
             from ament_index_python.packages import get_package_share_directory
             urdf_path = get_package_share_directory(model_package) + urdf_relative_path
             self.node_handle.get_logger().info(f"Model file: {urdf_path}")

@@ -403,15 +403,16 @@ class StateEstimationLKF:
         """
         内部循环线程，执行状态估计。
         """
-        rate = self.node.create_rate(1.0 / self.dt)
+        # rate = self.node.create_rate(1.0 / self.dt)
+        loop_rate = self.dt
         t0 = self.node.get_clock().now().nanoseconds*1e-9
         
         while rclpy.ok() and self.run_flag:
+            start_time = time.time()
             if (self.imu_msg_buffer.get() is None or
                 self.mode_schedule_buffer.get() is None or
                 self.joint_state_msg_buffer.get() is None or
                 (self.use_odom and self.odom_msg_buffer.get() is None)):
-                rate.sleep()
                 continue
             
             imu_msg = self.imu_msg_buffer.get()
@@ -473,8 +474,12 @@ class StateEstimationLKF:
             est_odom.twist.twist.angular.z = qvel_ptr[5]
             
             self.odom_est_publisher.publish(est_odom)
+
+            # rate.sleep()
             
-            rate.sleep()
+            now = time.time()
+            if now - start_time < loop_rate:
+                time.sleep(loop_rate-(now - start_time))
     
     def quaternion_to_rotation_matrix(self, quat: np.ndarray) -> np.ndarray:
         """

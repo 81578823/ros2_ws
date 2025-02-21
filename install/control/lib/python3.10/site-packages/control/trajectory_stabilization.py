@@ -17,6 +17,7 @@ import pinocchio as pin
 from ament_index_python.packages import get_package_share_directory
 from rclpy.qos import QoSProfile, QoSHistoryPolicy, QoSReliabilityPolicy
 from generation.pinocchio_interface import PinocchioInterface
+from core.misc.benchmark import RepeatedTimer
 
 vector_t = np.ndarray  # 1D数组
 matrix_t = np.ndarray  # 2D数组
@@ -105,7 +106,7 @@ class TrajectoryStabilization:
 
         model = self.pinocchioInterface_ptr.model_
         for joint_name in self.actuated_joints_name:
-            print("model.existJointName(joint_name): ", model.existJointName(joint_name))   
+            # print("model.existJointName(joint_name): ", model.existJointName(joint_name))   
             if model.existJointName(joint_name):
                 joint_id = model.getJointId(joint_name) - 2  # 根据C++代码的偏移
                 msg.names.append(joint_name)
@@ -141,12 +142,15 @@ class TrajectoryStabilization:
     def inner_loop(self):
         time.sleep(0.2)  # 初始等待
         loop_rate = 1.0 / self.freq
+        print("TrajectorStabilization_loop_rate: ", loop_rate)
+        timer = RepeatedTimer()
 
         percentage = 1.2
         qpos_start = np.zeros(len(self.actuated_joints_name))
 
         while rclpy.ok() and self.run_buffer.get():
             start_time = time.time()
+            timer.start_timer()
 
             if (self.qpos_ptr_buffer.get() is None or
                 self.qvel_ptr_buffer.get() is None or
@@ -154,7 +158,7 @@ class TrajectoryStabilization:
                 time.sleep(loop_rate)
                 continue
 
-            if percentage < 1.0:
+            elif percentage < 1.0:
                 if percentage < 0.0:
                     qpos_start = self.qpos_ptr_buffer.get()[-len(self.actuated_joints_name):]
                     percentage = 0.0
@@ -162,7 +166,7 @@ class TrajectoryStabilization:
                 actuator_commands = ActuatorCommands()
                 actuator_commands.set_zero(len(self.actuated_joints_name))
 
-                model = self.pinocchioInterface_ptr.model_
+                model = self.pinocchioInterface_ptr.getModel()
                 for i, joint_name in enumerate(self.actuated_joints_name):
                     if model.existJointName(joint_name):
                         joint_id = model.getJointId(joint_name) - 2
@@ -190,12 +194,13 @@ class TrajectoryStabilization:
                     actuator_commands = self.wbc.optimize()
                     self.actuator_commands_buffer.push(actuator_commands)
                     self.publish_cmds()
-
+            timer.end_timer()
             end_time = time.time()
-            elapsed = end_time - start_time
-            sleep_time = max(0.0, loop_rate - elapsed)
-            time.sleep(sleep_time)
+            # print("end_time - start_time", end_time - start_time)
+            if end_time - start_time < loop_rate:
+                time.sleep(loop_rate - (end_time - start_time))
+
 
         self.node_handle.get_logger().info(
-            "TrajectoryStabilization: Inner loop terminated."
+            f"[TrajectorStabilization] Max time {timer.get_max_interval_in_milliseconds()} ms, Average time {timer.get_average_in_milliseconds()} ms"
         )

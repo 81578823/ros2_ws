@@ -178,14 +178,15 @@ class TrajectorGeneration:
 
         timer = RepeatedTimer()
         loop_rate = 1.0 / self.freq
+        print("TrajectorGeneration_loop_rate:",loop_rate)
 
         self.node_handle.get_logger().info("Start generation loop")
 
         while self.run.get() and rclpy.ok():
+            start_time = time.time()
             timer.start_timer()
 
             if self.qpos_ptr_buffer.get() is None or self.qvel_ptr_buffer.get() is None or self.reference_buffer.getModeSchedule() is None:
-                # time.sleep(loop_rate)
                 continue
             else:
 
@@ -208,8 +209,11 @@ class TrajectorGeneration:
                 self.base_opt.optimize()
 
             timer.end_timer()
-            time.sleep(loop_rate)
-
+            now = time.time()
+            # print("now-start_time",now-start_time)
+            if now - start_time < loop_rate:
+                time.sleep(loop_rate-(now - start_time))
+                
         # 记录计时信息
         self.node_handle.get_logger().info(
             f"[TrajectorGeneration] Max time {timer.get_max_interval_in_milliseconds()} ms, Average time {timer.get_average_in_milliseconds()} ms"

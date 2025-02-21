@@ -21,6 +21,7 @@ from core.misc.buffer import Buffer
 from core.misc.benchmark import RepeatedTimer
 from core.misc.numeric_traits import limit_epsilon
 from core.trajectory.cubic_spline_trajectory import CubicSplineTrajectory, CubicSplineInterpolation
+import rclpy
 
 class DataVisualization:
     """
@@ -230,16 +231,16 @@ class DataVisualization:
         """
         内部循环，定期执行数据发布。
         """
-        loop_rate = 1.0 / 500.0 # 1000 Hz (每次循环的时间间隔为 0.001 秒)
-        next_time = time.time()  # 获取当前时间
-        iter_count = 0
+        loop_rate = 1.0 / 500.0 
 
-        self.node_handle.get_logger().info("Start DataVisualization loop")
+        # self.node_handle.get_logger().info("Start DataVisualization loop")
 
         time.sleep(0.01)  # Sleep 10ms
+        iter_count = 0
 
-        while self.run.get() and self.node_handle._context.ok():
-            next_time += loop_rate
+        while self.run.get() and rclpy.ok():        
+            next_time = time.time()  # 获取当前时间
+
             if self.qpos_ptr_buffer.get() is None or self.qvel_ptr_buffer.get() is None:
                 time.sleep(0.005)  # Sleep 5ms
                 continue
@@ -262,12 +263,13 @@ class DataVisualization:
             if iter_count % 10 == 0:
                 self.publish_base_trajectory()
             if iter_count % 50 == 0:
-                self.publish_footholds()
-
-            now = time.time()
-            if now < next_time:
-                time.sleep(next_time - now)  # 如果时间未到，等待到下一次执行
+                self.publish_footholds()            
+            
             iter_count += 1
+            now = time.time()
+            elapsed_time = now - next_time
+            if elapsed_time < loop_rate:
+                time.sleep(loop_rate - elapsed_time)
 
         self.node_handle.get_logger().info("[DataVisualization] Loop terminated")
 

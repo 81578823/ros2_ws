@@ -62,9 +62,11 @@ class CycleTimer:
         内部循环，用于定期更新周期时间。
         """
         # 使用 ROS 2 的 Rate 功能进行循环控制
-        loop_rate = self.node_handle_.create_rate(10000.0)  # 10,000 Hz
+        # loop_rate = self.node_handle_.create_rate(10000.0)  # 10,000 
+        loop_rate = 1.0/10000
 
         while rclpy.ok() and self.run_.get():
+            start_time = time.time()
             current_time = self.node_handle_.get_clock().now().nanoseconds*1e-9
 
             # 更新周期开始点
@@ -79,7 +81,11 @@ class CycleTimer:
             cycle_time = current_time - self.cycle_start_point_.get()
             self.current_cycle_time_.push(cycle_time)
 
-            loop_rate.sleep()
+            now = time.time()
+            if now - start_time < loop_rate:
+                time.sleep(loop_rate - (now - start_time))
+
+            # loop_rate.sleep()
 
     def timerReset(self):
         """

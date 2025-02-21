@@ -101,15 +101,16 @@ class MotionManager(Node):
         """
         time.sleep(0.02)  # 等待系统初始化
 
-        loop_rate = 1.0 / 1000.0  # 1000 Hz (每次循环的时间间隔为 0.001 秒)
-        next_time = time.time()  # 获取当前时间
-        iter_count = 0
+        # next_time = time.time()  # 获取当前时间
+        # iter_count = 0
+        # loop_rate = rclpy.duration.Duration(seconds=1.0 / 1000)  # 1000 Hz (1ms per cycle)
+        # loop_rate = 1.0 / 1000.0  # 1000 Hz (每次循环的时间间隔为 0.001 秒)
 
         self.get_logger().info("Start MotionManager inner loop")
 
         while self.run_.get() and rclpy.ok():
-
-            next_time += loop_rate
+            start_time = time.time()
+            # next_time += loop_rate
 
             # 检查紧急停止
             if self.joy_stick_ptr.eStop():
@@ -124,13 +125,11 @@ class MotionManager(Node):
             if self.gait_schedule_ptr.getCurrentGaitName() == "walk":
                 linear_vel_cmd = self.joy_stick_ptr.getLinearVelCmd()
                 yaw_vel_cmd: scalar_t = self.joy_stick_ptr.getYawVelCmd()
-                # print("linear_vel_cmd",linear_vel_cmd)
-                # print("yaw_vel_cmd",yaw_vel_cmd)
                 self.traj_gen_ptr.set_vel_cmd(linear_vel_cmd, yaw_vel_cmd)
 
             # 计算视野时间（horizon_time）
             current_cycle = self.gait_schedule_ptr.currentGaitCycle()
-            horizon_time = min(2.0, min(0.3, current_cycle))
+            horizon_time = min(2.0, max(0.3, current_cycle))
 
             # 评估步态调度
             mode_schedule_ptr = self.gait_schedule_ptr.eval(horizon_time)
@@ -163,11 +162,11 @@ class MotionManager(Node):
                 self.traj_gen_ptr.get_reference_buffer()
             )
 
-            # 控制循环频率
+
             now = time.time()
-            if now < next_time:
-                time.sleep(next_time - now)  # 如果时间未到，等待到下一次执行
-            iter_count += 1
+            if now - start_time < 0.001:
+                time.sleep(0.001 - (now - start_time))
+        
 
 
     def __del__(self):

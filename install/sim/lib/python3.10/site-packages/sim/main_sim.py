@@ -26,35 +26,27 @@ def physics_loop(sim: Simulate):
     syncMisalign = 0.1  # maximum mis-alignment before re-sync (simulation seconds)
     simRefreshFraction = 0.7  # fraction of refresh available for simulation
     kErrorLength = 1024  # load error string length
+    last_time = time.time()
 
     ctrlnoise = None
 
     while not sim.exitrequest.is_set():
         start_time = time.time()
-
-        # 处理模型加载请求
-        # if sim.droploadrequest.is_set():
-        #     sim.load_model(sim.dropfilename)
-        #     sim.droploadrequest.clear()
-        
-        # if sim.uiloadrequest > 0:
-        #     sim.uiloadrequest -= 1
-        #     # sim.load_model(sim.filename.decode('utf-8'))
         
         # 运行仿真
         if sim.run and (sim.m_ is not None) and (sim.d_ is not None):
             # 应用控制命令
-            apply_ctrl(sim)
-            sim.step()
+
             # 计算每次仿真步骤的更新频率
             elapsed_time = time.time() - start_time
             frequency = 1.0 / elapsed_time if elapsed_time > 0 else 0.0
-            # print(f"Simulation frequency: {frequency} Hz")
+
+            apply_ctrl(sim)
+            sim.step()
 
         else: 
             time.sleep(0.001)  # 1 ms
-            apply_ctrl(sim)
-            sim.step()
+
 
         # 如果全局 stop_flag 变成 True，则要求退出
         if stop_flag:
@@ -152,7 +144,7 @@ def main(args=None):
     sim.sim_publisher = sim_publisher  # 让Simulate知道SimPublisher实例
     sim.actuator_cmds_buffer = sim_publisher.get_cmds_buffer()
 
-    # print(f"Time step: {sim.m_.opt.timestep}")
+    print(f"Time step: {sim.m_.opt.timestep}")
 
     if sim.m_ is None:
         print(f"Failed to load model: {sim.load_error}")

@@ -170,7 +170,7 @@ class WholeBodyController:
 
         solution = qp.results
         # print("solution:",dir(solution))
-        print("solution.x:",solution.x)
+        # print("solution.x:",solution.x)
 
         optimal_u = np.array(solution.x).flatten()
         self.actuator_commands.torque = optimal_u[-len(self.actuated_joints_name):]

@@ -389,7 +389,7 @@ class ConvexMPC:
 
         # dim
 
-        dim = hpipm_ocp_qp_dim(N)
+        dim = hpipm_ocp_qp_dim(N)    # too slow
         dim.set('nx', nx, 0, N) # number of states
         dim.set('nu', nu, 0, N-1) # number of inputs
         
@@ -465,8 +465,7 @@ class ConvexMPC:
             x = qp_sol.get('x', k)
             u = qp_sol.get('u', k)
             self.solution_.append({'x': x, 'u': u})
-            # print("x",x)
-            # print("u",u)
+
         # 拟合轨迹
         self.fitTraj(t_now, N)
 
@@ -659,13 +658,6 @@ class ConvexMPC:
         Returns:
             np.ndarray: 雅可比矩阵。
         """
-        # roll, pitch, yaw = rpy
-        # J = np.array([
-        #     [1, np.sin(roll) * np.tan(pitch), np.cos(roll) * np.tan(pitch)],
-        #     [0, np.cos(roll), -np.sin(roll)],
-        #     [0, np.sin(roll) / np.cos(pitch), np.cos(roll) / np.cos(pitch)]
-        # ])
-
         jacobian_inv = pin.rpy.computeRpyJacobianInverse(rpy, pin.LOCAL_WORLD_ALIGNED)
 
         return jacobian_inv

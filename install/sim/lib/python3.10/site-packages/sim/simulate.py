@@ -4,31 +4,37 @@ import mujoco
 import threading
 import mujoco.viewer
 import numpy as np
-
+from collections import deque
+from threading import Lock
+import time
 class Simulate:
     """
     Simulate 类用于管理MuJoCo仿真，包括加载模型、初始化数据等。
     """
-    def __init__(self):
-        self.m_ = None  # mujoco.MjModel 实例
-        self.d_ = None  # mujoco.MjData 实例
-        self.mtx = threading.RLock()
-        self.uiloadrequest = 0
-        self.filename = b''  # 模型文件路径，bytes类型
-        self.load_error = ""
-        self.run = True
-        self.exitrequest = threading.Event()
+    def __init__(self, run=False, busywait=False, ctrl_noise_std=0.0, ctrl_noise_rate=0.0, percent_real_time=None, refresh_rate=0.1):
+        self.run = run
+        self.busywait = busywait
+        self.ctrl_noise_std = ctrl_noise_std
+        self.ctrl_noise_rate = ctrl_noise_rate
+        self.percent_real_time = percent_real_time if percent_real_time else [100]  # for simplicity
+        self.refresh_rate = refresh_rate
+        self.mtx = Lock()
         self.droploadrequest = threading.Event()
-        self.dropfilename = ""
+        self.uiloadrequest = threading.Event()
+        self.exitrequest = threading.Event()
+        self.m = None
+        self.d = None
+        self.ctrlnoise = None
+        self.syncMisalign = 0.1
+        self.syncSim = 0
+        self.syncCPU = None
         self.speed_changed = False
-        self.ctrl_noise_std = 0.0
-        self.ctrl_noise_rate = 0.0
-        self.percentRealTime = [100.0]  # 默认实时百分比
+        self.measured_slowdown = None
         self.real_time_index = 0
-        self.measured_slowdown = 1.0
         self.viewer = None  # 添加 Viewer 实例
         self.sim_publisher = None  # 将在 main_sim.py 中设置
         self.actuator_cmds_buffer = None  # 将在 main_sim.py 中设置
+        self.iter_=0
 
 
     def load_model(self, model_path: str):
@@ -113,12 +119,21 @@ class Simulate:
 
         # 执行仿真步进
         with self.mtx:
-            mujoco.mj_step(self.m_, self.d_)
+            if self.run and (self.m_ is not None) and (self.d_ is not None):
+                step_start = time.time()
+                # 应用控制命令
+                mujoco.mj_step(self.m_, self.d_)
+                # mujoco.mj_forward(self.m_, self.d_)
 
-            # 同步 Viewer
-            if self.viewer and self.viewer.is_running():
-                try:
-                    self.viewer.sync()
-                    # 确保每一步都更新显示
-                except Exception as e:
-                    print(f"Viewer sync failed: {e}")
+                # 同步 Viewer
+                if self.viewer and self.viewer.is_running():
+                    try:
+                        if self.iter_ % 10 == 0:  # 50Hz
+                            self.viewer.sync()
+                        self.iter_ += 1
+                        time_until_next_step = self.m_.opt.timestep - (time.time() - step_start)
+                        if time_until_next_step > 0:
+                            time.sleep(time_until_next_step)
+                        # 确保每一步都更新显示
+                    except Exception as e:
+                        print(f"Viewer sync failed: {e}")

@@ -303,11 +303,11 @@ class GaitSchedule:
                 f"Transition time slot: {self.transition_time_.get() - self.nodeHandle_.get_clock().now().nanoseconds*1e-9}s is not valid [0, 100]"
             )
             raise ValueError("Transition time slot is not valid [0, 100]")
-
-        loop_rate = 1000.0  # 1000 Hz
-        loop_period = 1.0 / loop_rate
-
+        new_gait_name = self.current_gait_.get()
+        # loop_rate = self.nodeHandle_.create_rate(1000)
+        loop_rate = 1.0 / 1000
         while rclpy.ok() and self.check_.get() and self.gait_buffer_.get() != self.current_gait_.get():
+            start_time = time.time()
             current_time = self.nodeHandle_.get_clock().now().nanoseconds*1e-9
             if current_time > self.transition_time_.get():
                 # 切换步态
@@ -316,9 +316,12 @@ class GaitSchedule:
                 # 重新初始化CycleTimer
                 new_duration = self.gait_map[new_gait_name].duration
                 self.cycle_timer_ = CycleTimer(self.nodeHandle_, new_duration)
-                self.nodeHandle_.get_logger().warn(f"Gait has been changed to {new_gait_name}")
-            time.sleep(loop_period)
 
+            # loop_rate.sleep()  
+            now = time.time()
+            if now - start_time < loop_rate:
+                time.sleep(loop_rate-(now - start_time))             
+        self.nodeHandle_.get_logger().warn(f"Gait has been changed to {new_gait_name}")
         self.in_transition_.push(False)
 
     @staticmethod

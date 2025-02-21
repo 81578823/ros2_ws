@@ -94,7 +94,7 @@ class SimPublisher(Node):
         
         # 设置仿真模型文件
         self.sim_.filename = model_file.encode('utf-8')  # 假设filename是bytes类型
-        self.sim_.uiloadrequest += 1  # 假设uiloadrequest是一个原子计数器
+        # self.sim_.uiloadrequest += 1  # 假设uiloadrequest是一个原子计数器
         self.get_logger().info(f"model file: {model_file}")
         
         # 创建SimulationReset服务
@@ -195,7 +195,6 @@ class SimPublisher(Node):
         """
         while self.sim_.d_ is None and rclpy.ok():
             self.get_logger().info("Waiting for simulation data to be ready...")
-            # time.sleep(1)
         
         if self.sim_.d_ is not None:
             if request.header.frame_id != PF_A_name(self.sim_.m_.names):
@@ -351,6 +350,8 @@ class SimPublisher(Node):
             self.actuator_cmds_buffer_.kd = list(msg.gaid_d)
             self.actuator_cmds_buffer_.vel = list(msg.vel_des)
             self.actuator_cmds_buffer_.torque = list(msg.feedforward_torque)
+
+            self.sim_.run=True
     
     def drop_old_message(self):
         """
