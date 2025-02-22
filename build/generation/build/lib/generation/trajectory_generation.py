@@ -197,16 +197,19 @@ class TrajectorGeneration:
                 self.pinocchio_interface.updateRobotState(qpos_ptr, qvel_ptr)
 
                 # 生成基座轨迹参考
-                self.base_opt.generateTrajRef()
+                self.base_opt.generateTrajRef() # 0.0008s
 
                 # 优化足部位置
-                self.foothold_opt.optimize()
+                self.foothold_opt.optimize()   # 0.00033s
 
                 # 生成足部轨迹
-                self.generate_foot_traj()
+                self.generate_foot_traj()   # 0.00016s
 
+                test_start = time.time()
                 # 优化基座轨迹
-                self.base_opt.optimize()
+                self.base_opt.optimize()  # 0.057s
+                test_end = time.time()
+                print("base_optimize_time",test_end-test_start)
 
             timer.end_timer()
             now = time.time()
@@ -215,7 +218,7 @@ class TrajectorGeneration:
                 time.sleep(loop_rate-(now - start_time))
                 
         # 记录计时信息
-        self.node_handle.get_logger().info(
+        print(
             f"[TrajectorGeneration] Max time {timer.get_max_interval_in_milliseconds()} ms, Average time {timer.get_average_in_milliseconds()} ms"
         )
 

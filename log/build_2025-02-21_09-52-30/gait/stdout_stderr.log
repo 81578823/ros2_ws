@@ -13,18 +13,18 @@ running build_py
 creating /home/wbb/ros2_ws/build/gait/build
 creating /home/wbb/ros2_ws/build/gait/build/lib
 creating /home/wbb/ros2_ws/build/gait/build/lib/gait
-copying gait/gait_schedule.py -> /home/wbb/ros2_ws/build/gait/build/lib/gait
 copying gait/__init__.py -> /home/wbb/ros2_ws/build/gait/build/lib/gait
 copying gait/cycle_timer.py -> /home/wbb/ros2_ws/build/gait/build/lib/gait
+copying gait/gait_schedule.py -> /home/wbb/ros2_ws/build/gait/build/lib/gait
 running install
 running install_lib
 creating /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait
-copying /home/wbb/ros2_ws/build/gait/build/lib/gait/gait_schedule.py -> /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait
 copying /home/wbb/ros2_ws/build/gait/build/lib/gait/__init__.py -> /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait
 copying /home/wbb/ros2_ws/build/gait/build/lib/gait/cycle_timer.py -> /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait
-byte-compiling /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait/gait_schedule.py to gait_schedule.cpython-310.pyc
+copying /home/wbb/ros2_ws/build/gait/build/lib/gait/gait_schedule.py -> /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait
 byte-compiling /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait/__init__.py to __init__.cpython-310.pyc
 byte-compiling /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait/cycle_timer.py to cycle_timer.cpython-310.pyc
+byte-compiling /home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages/gait/gait_schedule.py to gait_schedule.cpython-310.pyc
 running install_data
 creating /home/wbb/ros2_ws/install/gait/share/ament_index
 creating /home/wbb/ros2_ws/install/gait/share/ament_index/resource_index

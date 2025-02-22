@@ -128,7 +128,7 @@ class Simulate:
                 # 同步 Viewer
                 if self.viewer and self.viewer.is_running():
                     try:
-                        if self.iter_ % 10 == 0:  # 50Hz
+                        if self.iter_ % 10 == 0: 
                             self.viewer.sync()
                         self.iter_ += 1
                         time_until_next_step = self.m_.opt.timestep - (time.time() - step_start)

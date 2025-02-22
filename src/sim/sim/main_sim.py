@@ -143,7 +143,7 @@ def main(args=None):
     # print("sim_publisher.actuator_cmds_buffer_",sim_publisher.actuator_cmds_buffer_.actuators_name)
     sim.sim_publisher = sim_publisher  # 让Simulate知道SimPublisher实例
     sim.actuator_cmds_buffer = sim_publisher.get_cmds_buffer()
-
+    # sim.m_.opt.timestep = 0.005
     print(f"Time step: {sim.m_.opt.timestep}")
 
     if sim.m_ is None:

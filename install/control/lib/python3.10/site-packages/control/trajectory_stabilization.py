@@ -201,6 +201,6 @@ class TrajectoryStabilization:
                 time.sleep(loop_rate - (end_time - start_time))
 
 
-        self.node_handle.get_logger().info(
+        print(
             f"[TrajectorStabilization] Max time {timer.get_max_interval_in_milliseconds()} ms, Average time {timer.get_average_in_milliseconds()} ms"
         )

@@ -13,21 +13,21 @@ running build_py
 creating /home/wbb/ros2_ws/build/estimation/build
 creating /home/wbb/ros2_ws/build/estimation/build/lib
 creating /home/wbb/ros2_ws/build/estimation/build/lib/estimation
-copying estimation/test.py -> /home/wbb/ros2_ws/build/estimation/build/lib/estimation
 copying estimation/test2.py -> /home/wbb/ros2_ws/build/estimation/build/lib/estimation
-copying estimation/state_estimation_lkf.py -> /home/wbb/ros2_ws/build/estimation/build/lib/estimation
 copying estimation/__init__.py -> /home/wbb/ros2_ws/build/estimation/build/lib/estimation
+copying estimation/test.py -> /home/wbb/ros2_ws/build/estimation/build/lib/estimation
+copying estimation/state_estimation_lkf.py -> /home/wbb/ros2_ws/build/estimation/build/lib/estimation
 running install
 running install_lib
 creating /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation
-copying /home/wbb/ros2_ws/build/estimation/build/lib/estimation/test.py -> /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation
 copying /home/wbb/ros2_ws/build/estimation/build/lib/estimation/test2.py -> /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation
-copying /home/wbb/ros2_ws/build/estimation/build/lib/estimation/state_estimation_lkf.py -> /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation
 copying /home/wbb/ros2_ws/build/estimation/build/lib/estimation/__init__.py -> /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation
-byte-compiling /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation/test.py to test.cpython-310.pyc
+copying /home/wbb/ros2_ws/build/estimation/build/lib/estimation/test.py -> /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation
+copying /home/wbb/ros2_ws/build/estimation/build/lib/estimation/state_estimation_lkf.py -> /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation
 byte-compiling /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation/test2.py to test2.cpython-310.pyc
-byte-compiling /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation/state_estimation_lkf.py to state_estimation_lkf.cpython-310.pyc
 byte-compiling /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation/test.py to test.cpython-310.pyc
+byte-compiling /home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages/estimation/state_estimation_lkf.py to state_estimation_lkf.cpython-310.pyc
 running install_data
 creating /home/wbb/ros2_ws/install/estimation/share/ament_index
 creating /home/wbb/ros2_ws/install/estimation/share/ament_index/resource_index

@@ -1,0 +1,257 @@
+[0.469s] Invoking command in '/home/wbb/ros2_ws/build/trans': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/trans -- -j16 -l16
+[0.491s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.604s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[0.628s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.631s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.637s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.645s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.656s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.673s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.684s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.696s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.709s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.972s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.349s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.486s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.507s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.528s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.528s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.528s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.564s] -- Configuring done
+[1.586s] -- Generating done
+[1.593s] -- Build files have been written to: /home/wbb/ros2_ws/build/trans
+[1.613s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_generator_c[0m
+[1.621s] [  1%] Built target trans__cpp
+[1.624s] [ 12%] Built target trans__rosidl_generator_c
+[1.628s] [ 12%] Built target ament_cmake_python_copy_trans
+[1.629s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_cpp[0m
+[1.631s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_introspection_cpp[0m
+[1.631s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_fastrtps_cpp[0m
+[1.634s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_fastrtps_c[0m
+[1.634s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_c[0m
+[1.635s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_introspection_c[0m
+[1.642s] [ 23%] Built target trans__rosidl_typesupport_cpp
+[1.643s] [ 34%] Built target trans__rosidl_typesupport_fastrtps_c
+[1.644s] [ 45%] Built target trans__rosidl_typesupport_introspection_cpp
+[1.644s] [ 56%] Built target trans__rosidl_typesupport_fastrtps_cpp
+[1.646s] [ 67%] Built target trans__rosidl_typesupport_c
+[1.646s] [ 78%] Built target trans__rosidl_typesupport_introspection_c
+[1.665s] [ 78%] Built target trans
+[1.684s] [ 80%] Built target trans__py
+[1.695s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_generator_py[0m
+[1.711s] [ 89%] Built target trans__rosidl_generator_py
+[1.718s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_introspection_c__pyext[0m
+[1.720s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.721s] [35m[1mConsolidate compiler generated dependencies of target trans__rosidl_typesupport_c__pyext[0m
+[1.729s] [ 92%] Built target trans__rosidl_typesupport_introspection_c__pyext
+[1.732s] [ 98%] Built target trans__rosidl_typesupport_c__pyext
+[1.732s] [100%] Built target trans__rosidl_typesupport_fastrtps_c__pyext
+[1.787s] running egg_info
+[1.787s] writing trans.egg-info/PKG-INFO
+[1.788s] writing dependency_links to trans.egg-info/dependency_links.txt
+[1.788s] writing top-level names to trans.egg-info/top_level.txt
+[1.790s] reading manifest file 'trans.egg-info/SOURCES.txt'
+[1.790s] writing manifest file 'trans.egg-info/SOURCES.txt'
+[1.811s] [100%] Built target ament_cmake_python_build_trans_egg
+[1.930s] Invoked command in '/home/wbb/ros2_ws/build/trans' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/trans -- -j16 -l16
+[1.931s] Invoking command in '/home/wbb/ros2_ws/build/trans': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --install /home/wbb/ros2_ws/build/trans
+[1.937s] -- Install configuration: ""
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/ament_index/resource_index/rosidl_interfaces/trans
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__functions.c
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__functions.h
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__struct.h
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__functions.h
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__type_support.h
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__type_support.h
+[1.938s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__functions.c
+[1.939s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__struct.h
+[1.939s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/actuator_cmds.h
+[1.939s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/rosidl_generator_c__visibility_control.h
+[1.939s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/touch_sensor.h
+[1.939s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv
+[1.939s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail
+[1.939s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__type_support.h
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__functions.h
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__type_support.h
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__functions.c
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__functions.h
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__functions.c
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__struct.h
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__struct.h
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/simulation_reset.h
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/gait_switch.h
+[1.940s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/environment/library_path.sh
+[1.940s] -- Installing: /home/wbb/ros2_ws/install/trans/share/trans/environment/library_path.dsv
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/lib/libtrans__rosidl_generator_c.so
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__rosidl_typesupport_fastrtps_c.h
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__rosidl_typesupport_fastrtps_c.h
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__rosidl_typesupport_fastrtps_c.h
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__rosidl_typesupport_fastrtps_c.h
+[1.941s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/lib/libtrans__rosidl_typesupport_fastrtps_c.so
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__type_support.hpp
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__struct.hpp
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__traits.hpp
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__builder.hpp
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__struct.hpp
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__builder.hpp
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__traits.hpp
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__type_support.hpp
+[1.942s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/touch_sensor.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/actuator_cmds.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__builder.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__type_support.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__struct.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__traits.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__type_support.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__struct.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__traits.hpp
+[1.943s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__builder.hpp
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/simulation_reset.hpp
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/gait_switch.hpp
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/dds_fastrtps
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__rosidl_typesupport_fastrtps_cpp.hpp
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__rosidl_typesupport_fastrtps_cpp.hpp
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail
+[1.944s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/dds_fastrtps
+[1.945s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__rosidl_typesupport_fastrtps_cpp.hpp
+[1.945s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__rosidl_typesupport_fastrtps_cpp.hpp
+[1.945s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/lib/libtrans__rosidl_typesupport_fastrtps_cpp.so
+[1.946s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans
+[1.946s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg
+[1.946s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail
+[1.946s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__type_support.c
+[1.946s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__type_support.c
+[1.946s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__rosidl_typesupport_introspection_c.h
+[1.946s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__rosidl_typesupport_introspection_c.h
+[1.947s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.947s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv
+[1.947s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail
+[1.947s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__rosidl_typesupport_introspection_c.h
+[1.947s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__rosidl_typesupport_introspection_c.h
+[1.947s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__type_support.c
+[1.947s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__type_support.c
+[1.947s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/lib/libtrans__rosidl_typesupport_introspection_c.so
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/lib/libtrans__rosidl_typesupport_c.so
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__rosidl_typesupport_introspection_cpp.hpp
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__rosidl_typesupport_introspection_cpp.hpp
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/actuator_cmds__type_support.cpp
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/msg/detail/touch_sensor__type_support.cpp
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__type_support.cpp
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/simulation_reset__rosidl_typesupport_introspection_cpp.hpp
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__rosidl_typesupport_introspection_cpp.hpp
+[1.948s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/include/trans/trans/srv/detail/gait_switch__type_support.cpp
+[1.949s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/lib/libtrans__rosidl_typesupport_introspection_cpp.so
+[1.949s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/lib/libtrans__rosidl_typesupport_cpp.so
+[1.949s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/environment/pythonpath.sh
+[1.949s] -- Installing: /home/wbb/ros2_ws/install/trans/share/trans/environment/pythonpath.dsv
+[1.949s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans-0.0.0-py3.10.egg-info
+[1.949s] -- Installing: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans-0.0.0-py3.10.egg-info/PKG-INFO
+[1.949s] -- Installing: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.949s] -- Installing: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans-0.0.0-py3.10.egg-info/top_level.txt
+[1.949s] -- Installing: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.949s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans
+[1.949s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/_trans_s.ep.rosidl_typesupport_introspection_c.c
+[1.949s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/libtrans__rosidl_generator_py.so
+[1.949s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/trans_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/trans_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/_trans_s.ep.rosidl_typesupport_c.c
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/trans_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/_trans_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/msg
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/msg/_touch_sensor.py
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/msg/_touch_sensor_s.c
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/msg/_actuator_cmds.py
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/msg/__init__.py
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/msg/_actuator_cmds_s.c
+[1.950s] -- Installing: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/__init__.py
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/srv
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/srv/_simulation_reset.py
+[1.950s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/srv/_gait_switch.py
+[1.951s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/srv/_gait_switch_s.c
+[1.951s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/srv/_simulation_reset_s.c
+[1.951s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/srv/__init__.py
+[1.986s] Listing '/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans'...
+[1.987s] Compiling '/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/__init__.py'...
+[1.987s] Listing '/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/msg'...
+[1.987s] Listing '/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/srv'...
+[1.992s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/trans_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.992s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/trans_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.992s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages/trans/trans_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.994s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/lib/libtrans__rosidl_generator_py.so
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/msg/ActuatorCmds.idl
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/msg/TouchSensor.idl
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/srv/SimulationReset.idl
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/srv/GaitSwitch.idl
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/msgs/ActuatorCmds.msg
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/msgs/TouchSensor.msg
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/srv/SimulationReset.srv
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/srv/SimulationReset_Request.msg
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/srv/SimulationReset_Response.msg
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/srv/GaitSwitch.srv
+[1.996s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/srv/GaitSwitch_Request.msg
+[1.997s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/srv/GaitSwitch_Response.msg
+[1.997s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/ament_index/resource_index/package_run_dependencies/trans
+[1.997s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/ament_index/resource_index/parent_prefix_path/trans
+[1.997s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/environment/ament_prefix_path.sh
+[1.997s] -- Installing: /home/wbb/ros2_ws/install/trans/share/trans/environment/ament_prefix_path.dsv
+[1.997s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/environment/path.sh
+[1.997s] -- Installing: /home/wbb/ros2_ws/install/trans/share/trans/environment/path.dsv
+[1.997s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/local_setup.bash
+[1.997s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/local_setup.sh
+[1.997s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/local_setup.zsh
+[1.997s] -- Installing: /home/wbb/ros2_ws/install/trans/share/trans/local_setup.dsv
+[1.997s] -- Installing: /home/wbb/ros2_ws/install/trans/share/trans/package.dsv
+[1.998s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/ament_index/resource_index/packages/trans
+[1.998s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_generator_cExport.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_generator_cExport-noconfig.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_typesupport_fastrtps_cExport.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_generator_cppExport.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/trans__rosidl_typesupport_introspection_cExport.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/trans__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/trans__rosidl_typesupport_cExport.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/trans__rosidl_typesupport_cExport-noconfig.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/trans__rosidl_typesupport_introspection_cppExport.cmake
+[1.999s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/trans__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/trans__rosidl_typesupport_cppExport.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/trans__rosidl_typesupport_cppExport-noconfig.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_generator_pyExport.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/export_trans__rosidl_generator_pyExport-noconfig.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/rosidl_cmake-extras.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/ament_cmake_export_libraries-extras.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/ament_cmake_export_targets-extras.cmake
+[2.000s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.001s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.001s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/transConfig.cmake
+[2.001s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/cmake/transConfig-version.cmake
+[2.001s] -- Up-to-date: /home/wbb/ros2_ws/install/trans/share/trans/package.xml
+[2.001s] Invoked command in '/home/wbb/ros2_ws/build/trans' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --install /home/wbb/ros2_ws/build/trans

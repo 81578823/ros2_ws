@@ -17,12 +17,12 @@
 -- Build files have been written to: /home/wbb/ros2_ws/build/visualization
 -- Install configuration: ""
 -- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/launch
--- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/launch/a1_vis_launch.py
 -- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/launch/aliengo_vis_launch.py
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/launch/a1_vis_launch.py
 -- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config
--- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config/config.rviz
--- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config/atlas_config.rviz
 -- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config/spot_config.rviz
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config/atlas_config.rviz
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config/config.rviz
 -- Installing: /home/wbb/ros2_ws/install/visualization/share/ament_index/resource_index/package_run_dependencies/visualization
 -- Installing: /home/wbb/ros2_ws/install/visualization/share/ament_index/resource_index/parent_prefix_path/visualization
 -- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/ament_prefix_path.sh

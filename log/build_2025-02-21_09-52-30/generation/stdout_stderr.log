@@ -13,30 +13,30 @@ running build_py
 creating /home/wbb/ros2_ws/build/generation/build
 creating /home/wbb/ros2_ws/build/generation/build/lib
 creating /home/wbb/ros2_ws/build/generation/build/lib/generation
-copying generation/test.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
-copying generation/test2.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
-copying generation/pinocchio_interface.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
-copying generation/convex_mpc.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
 copying generation/trajectory_generation.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
-copying generation/__init__.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
+copying generation/pinocchio_interface.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
 copying generation/foothold_optimization.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
+copying generation/test2.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
+copying generation/__init__.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
+copying generation/test.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
+copying generation/convex_mpc.py -> /home/wbb/ros2_ws/build/generation/build/lib/generation
 running install
 running install_lib
 creating /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
-copying /home/wbb/ros2_ws/build/generation/build/lib/generation/test.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
-copying /home/wbb/ros2_ws/build/generation/build/lib/generation/test2.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
-copying /home/wbb/ros2_ws/build/generation/build/lib/generation/pinocchio_interface.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
-copying /home/wbb/ros2_ws/build/generation/build/lib/generation/convex_mpc.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
 copying /home/wbb/ros2_ws/build/generation/build/lib/generation/trajectory_generation.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
-copying /home/wbb/ros2_ws/build/generation/build/lib/generation/__init__.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+copying /home/wbb/ros2_ws/build/generation/build/lib/generation/pinocchio_interface.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
 copying /home/wbb/ros2_ws/build/generation/build/lib/generation/foothold_optimization.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
-byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/test.py to test.cpython-310.pyc
-byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/test2.py to test2.cpython-310.pyc
-byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/pinocchio_interface.py to pinocchio_interface.cpython-310.pyc
-byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/convex_mpc.py to convex_mpc.cpython-310.pyc
+copying /home/wbb/ros2_ws/build/generation/build/lib/generation/test2.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+copying /home/wbb/ros2_ws/build/generation/build/lib/generation/__init__.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+copying /home/wbb/ros2_ws/build/generation/build/lib/generation/test.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+copying /home/wbb/ros2_ws/build/generation/build/lib/generation/convex_mpc.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
 byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/trajectory_generation.py to trajectory_generation.cpython-310.pyc
-byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/pinocchio_interface.py to pinocchio_interface.cpython-310.pyc
 byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/foothold_optimization.py to foothold_optimization.cpython-310.pyc
+byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/test2.py to test2.cpython-310.pyc
+byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/test.py to test.cpython-310.pyc
+byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/convex_mpc.py to convex_mpc.cpython-310.pyc
 running install_data
 creating /home/wbb/ros2_ws/install/generation/share/ament_index
 creating /home/wbb/ros2_ws/install/generation/share/ament_index/resource_index

@@ -456,9 +456,9 @@ class ConvexMPC:
 
 
         # solve qp
-        start_time = time.time()
+        # start_time = time.time()
         solver.solve(qp, qp_sol)
-        end_time = time.time()
+        # end_time = time.time()
         # print('solve time {:e}'.format(end_time-start_time))
 
         for k in range(N):

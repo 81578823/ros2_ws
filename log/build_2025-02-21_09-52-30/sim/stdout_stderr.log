@@ -13,21 +13,21 @@ running build_py
 creating /home/wbb/ros2_ws/build/sim/build
 creating /home/wbb/ros2_ws/build/sim/build/lib
 creating /home/wbb/ros2_ws/build/sim/build/lib/sim
+copying sim/__init__.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
 copying sim/simulate.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
 copying sim/sim_publisher.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
 copying sim/main_sim.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
-copying sim/__init__.py -> /home/wbb/ros2_ws/build/sim/build/lib/sim
 running install
 running install_lib
 creating /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
+copying /home/wbb/ros2_ws/build/sim/build/lib/sim/__init__.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
 copying /home/wbb/ros2_ws/build/sim/build/lib/sim/simulate.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
 copying /home/wbb/ros2_ws/build/sim/build/lib/sim/sim_publisher.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
 copying /home/wbb/ros2_ws/build/sim/build/lib/sim/main_sim.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
-copying /home/wbb/ros2_ws/build/sim/build/lib/sim/__init__.py -> /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim
+byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/__init__.py to __init__.cpython-310.pyc
 byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/simulate.py to simulate.cpython-310.pyc
 byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/sim_publisher.py to sim_publisher.cpython-310.pyc
 byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/main_sim.py to main_sim.cpython-310.pyc
-byte-compiling /home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages/sim/__init__.py to __init__.cpython-310.pyc
 running install_data
 creating /home/wbb/ros2_ws/install/sim/share/sim/launch
 copying launch/sim.launch.py -> /home/wbb/ros2_ws/install/sim/share/sim/launch
