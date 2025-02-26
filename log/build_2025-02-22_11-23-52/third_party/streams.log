@@ -1,0 +1,20 @@
+[0.886s] Invoking command in '/home/wbb/ros2_ws/src/third_party': PYTHONPATH=/home/wbb/ros2_ws/build/third_party/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/third_party build --build-base /home/wbb/ros2_ws/build/third_party/build install --record /home/wbb/ros2_ws/build/third_party/install.log --single-version-externally-managed install_data
+[1.107s] running egg_info
+[1.109s] writing ../../build/third_party/third_party.egg-info/PKG-INFO
+[1.109s] writing dependency_links to ../../build/third_party/third_party.egg-info/dependency_links.txt
+[1.109s] writing entry points to ../../build/third_party/third_party.egg-info/entry_points.txt
+[1.110s] writing requirements to ../../build/third_party/third_party.egg-info/requires.txt
+[1.110s] writing top-level names to ../../build/third_party/third_party.egg-info/top_level.txt
+[1.113s] reading manifest file '../../build/third_party/third_party.egg-info/SOURCES.txt'
+[1.114s] writing manifest file '../../build/third_party/third_party.egg-info/SOURCES.txt'
+[1.114s] running build
+[1.114s] running build_py
+[1.114s] running install
+[1.115s] running install_lib
+[1.116s] running install_data
+[1.116s] running install_egg_info
+[1.118s] removing '/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages/third_party-0.0.0-py3.10.egg-info' (and everything under it)
+[1.118s] Copying ../../build/third_party/third_party.egg-info to /home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages/third_party-0.0.0-py3.10.egg-info
+[1.120s] running install_scripts
+[1.142s] writing list of installed files to '/home/wbb/ros2_ws/build/third_party/install.log'
+[2.168s] Invoked command in '/home/wbb/ros2_ws/src/third_party' returned '0': PYTHONPATH=/home/wbb/ros2_ws/build/third_party/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/third_party build --build-base /home/wbb/ros2_ws/build/third_party/build install --record /home/wbb/ros2_ws/build/third_party/install.log --single-version-externally-managed install_data

@@ -174,7 +174,7 @@ class TrajectorGeneration:
         """
         内部循环，定期执行轨迹生成和优化。
         """
-        time.sleep(0.1)  # 等待系统初始化
+        time.sleep(0.2)  # 等待系统初始化
 
         timer = RepeatedTimer()
         loop_rate = 1.0 / self.freq
@@ -205,11 +205,11 @@ class TrajectorGeneration:
                 # 生成足部轨迹
                 self.generate_foot_traj()   # 0.00016s
 
-                test_start = time.time()
+                # test_start = time.time()
                 # 优化基座轨迹
                 self.base_opt.optimize()  # 0.057s
-                test_end = time.time()
-                print("base_optimize_time",test_end-test_start)
+                # test_end = time.time()
+                # print("base_optimize_time",test_end-test_start)
 
             timer.end_timer()
             now = time.time()

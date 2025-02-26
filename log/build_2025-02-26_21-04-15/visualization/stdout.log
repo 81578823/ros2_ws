@@ -1,0 +1,23 @@
+-- Install configuration: ""
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/launch
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/launch/a1_vis_launch.py
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/launch/aliengo_vis_launch.py
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config/config.rviz
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config/atlas_config.rviz
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/config/spot_config.rviz
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/ament_index/resource_index/package_run_dependencies/visualization
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/ament_index/resource_index/parent_prefix_path/visualization
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/ament_prefix_path.sh
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/ament_prefix_path.dsv
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/path.sh
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/path.dsv
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/local_setup.bash
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/local_setup.sh
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/local_setup.zsh
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/local_setup.dsv
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/package.dsv
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/ament_index/resource_index/packages/visualization
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/cmake/visualizationConfig.cmake
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/cmake/visualizationConfig-version.cmake
+-- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/package.xml

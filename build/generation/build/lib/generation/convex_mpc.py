@@ -50,7 +50,7 @@ class ConvexMPC:
         # 加载模型相关参数
         self.foot_names: List[str] = config_["model"]["foot_names"]
         self.base_name: str = config_["model"]["base_name"]
-        self.dt_ = 0.02  # 固定时间步长，或者从配置中读取
+        self.dt_ = 0.05  # 固定时间步长，或者从配置中读取
         self.freq_ = config_["generation"]["frequency"]
         self.h_des: scalar_t = 0.58  # 默认高度目标
 
@@ -150,10 +150,6 @@ class ConvexMPC:
             rpy_k[2] += 0.05 * k * self.yawd_
             rpy_t.append(rpy_k)
 
-            # print("rpy_k",rpy_k)
-            # print("self.toRotationMatrix(rpy_k)",self.toRotationMatrix(rpy_k))
-            # print("self.vel_cmd",self.vel_cmd)
-
             vel_des = self.toRotationMatrix(rpy_k) @ self.vel_cmd
             pos_k = self.pos_start + 0.05 * k * vel_des
             pos_k[2] = self.h_des
@@ -243,16 +239,6 @@ class ConvexMPC:
             "r": np.zeros(3 * nf)
         }
 
-        # 填充不等式约束
-        Ci = np.array([[self.mu_, 0, 1.],
-                       [-self.mu_, 0, 1.],
-                       [0, self.mu_, 1.],
-                       [0, -self.mu_, 1.],
-                       [0, 0, 1.]])
-        for i in range(nf):
-            ocp_k["D"][5 * i:5 * i + 5, 3 * i:3 * i + 3] = Ci
-            ocp_k["ug"][5 * i + 4] = 400 if contact_flag[i] else 0.0
-            ocp_k["ug_mask"][5 * i:5 * i + 4] = 0.0  # 前四个约束不受上界影响
 
         self.ocp_.append(ocp_k)
 
@@ -347,17 +333,11 @@ class ConvexMPC:
         self.ocp_ = []
         self.solution_ = []
 
-        # 获取惯性矩阵
-        # print("Ig_0",self.pinocchioInterface_ptr_.getData().Ig)
-        # print("Ig_0_type",type(self.pinocchioInterface_ptr_.getData().Ig))
-        # print("Inertia attributes and methods:", dir(self.pinocchioInterface_ptr_.getData().Ig))
+        # print("mode_schedule.duration()",mode_schedule.duration())
+        N=4
 
         Ig_0 = self.pinocchioInterface_ptr_.getData().Ig.inertia
-        # print("Ig_0_type",type(Ig_0))
-        # print("Ig_0",Ig_0)
-        # print("Ig_0_shape:",Ig_0.shape)
         base_pose = self.pinocchioInterface_ptr_.getFramePose(self.base_name)
-        # print("base_pose_shape:",base_pose.rotation.shape)  
         self.Ig_ = base_pose.rotation.transpose() @ Ig_0 @ base_pose.rotation
 
         base_twist = self.pinocchioInterface_ptr_.getFrame6dVel_localWorldAligned(self.base_name)
@@ -365,8 +345,7 @@ class ConvexMPC:
         self.rpy_start = rpy_m - self.computeEulerAngleErr(rpy_m, rpy_traj.evaluate(t_now))
 
         for k in range(N):
-            if k < N:
-                self.getDynamics(t_now, k, mode_schedule)
+            self.getDynamics(t_now, k, mode_schedule)
             self.getInequalityConstraints(k, N, mode_schedule)
             self.getCosts(t_now, k, N, mode_schedule)
         
@@ -383,7 +362,7 @@ class ConvexMPC:
         nu = len(self.ocp_[0]["B"][0])
 
         # define flags
-        codegen_data = 1; # export qp data in the file dense_qp_data.c for use from C examples
+        codegen_data = 0; # export qp data in the file dense_qp_data.c for use from C examples
         warm_start = 0; # set to 1 to warm-start the primal variable
 
 
@@ -398,8 +377,11 @@ class ConvexMPC:
         # codegen
         if codegen_data:
             dim.codegen('dense_qp_data.c', 'w')
+        x0=np.concatenate([base_pose.translation, base_twist.linear , rpy_m, base_twist.angular])
 
         qp = hpipm_ocp_qp(dim)
+
+        # print("N",N)
 
         for k in range(N):
             qp.set('A', self.ocp_[k]["A"], k)
@@ -416,7 +398,8 @@ class ConvexMPC:
             qp.set('ug', self.ocp_[k]["ug"], k)
             qp.set('lg_mask', self.ocp_[k]["lg_mask"], k)
             qp.set('ug_mask', self.ocp_[k]["ug_mask"], k)
-        
+        qp.set('lx', x0, 0, N)
+        qp.set('ux', x0, 0, N)
         # print to shell
         # qp.print_C_struct()
         # codegen
@@ -426,8 +409,8 @@ class ConvexMPC:
         # qp sol
         qp_sol = hpipm_ocp_qp_sol(dim)
 
-        # set up solver arg
-        #mode = 'speed_abs'
+        # set up solver args
+        # mode = 'speed_abs'
         mode = 'speed'
         #mode = 'balance'
         #mode = 'robust'
@@ -445,6 +428,7 @@ class ConvexMPC:
         arg.set('reg_prim', 1e-12)
         arg.set('pred_corr', 1)
         arg.set('split_step', 1)
+        arg.set('warm_start', warm_start)
 
 
         # codegen
@@ -463,8 +447,12 @@ class ConvexMPC:
 
         for k in range(N):
             x = qp_sol.get('x', k)
+            # if k == 0:
+            #     x=x0
+            # else:
+            #     x=self.ocp_[k-1]["A"] @ x + self.ocp_[k-1]["B"] @ qp_sol.get('u', k-1)
             u = qp_sol.get('u', k)
-            self.solution_.append({'x': x, 'u': u})
+            self.solution_.append({'x': x.flatten(), 'u': u.flatten()})
 
         # 拟合轨迹
         self.fitTraj(t_now, N)

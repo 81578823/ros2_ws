@@ -1,0 +1,23 @@
+[0.593s] Invoking command in '/home/wbb/ros2_ws/build/trans': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/trans -- -j16 -l16
+[0.641s] [  1%] Built target trans__cpp
+[0.642s] [ 12%] Built target trans__rosidl_generator_c
+[0.651s] [ 12%] Built target ament_cmake_python_copy_trans
+[0.660s] [ 23%] Built target trans__rosidl_typesupport_cpp
+[0.662s] [ 34%] Built target trans__rosidl_typesupport_fastrtps_cpp
+[0.663s] [ 45%] Built target trans__rosidl_typesupport_introspection_c
+[0.666s] [ 65%] Built target trans__rosidl_typesupport_fastrtps_c
+[0.666s] [ 67%] Built target trans__rosidl_typesupport_introspection_cpp
+[0.669s] [ 78%] Built target trans__rosidl_typesupport_c
+[0.688s] [ 78%] Built target trans
+[0.710s] [ 80%] Built target trans__py
+[0.736s] [ 89%] Built target trans__rosidl_generator_py
+[0.759s] [ 92%] Built target trans__rosidl_typesupport_fastrtps_c__pyext
+[0.761s] [ 96%] Built target trans__rosidl_typesupport_introspection_c__pyext
+[0.761s] [100%] Built target trans__rosidl_typesupport_c__pyext
+[0.792s] running egg_info
+[0.793s] writing trans.egg-info/PKG-INFO
+[0.793s] writing dependency_links to trans.egg-info/dependency_links.txt
+[0.793s] writing top-level names to trans.egg-info/top_level.txt
+[0.795s] reading manifest file 'trans.egg-info/SOURCES.txt'
+[0.795s] writing manifest file 'trans.egg-info/SOURCES.txt'
+[0.815s] [100%] Built target ament_cmake_python_build_trans_egg

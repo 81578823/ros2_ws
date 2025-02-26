@@ -1,0 +1,47 @@
+[1.174s] Invoking command in '/home/wbb/ros2_ws/src/motion/generation': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/generation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/generation build --build-base /home/wbb/ros2_ws/build/generation/build install --record /home/wbb/ros2_ws/build/generation/install.log --single-version-externally-managed install_data
+[1.325s] running egg_info
+[1.325s] writing ../../../build/generation/generation.egg-info/PKG-INFO
+[1.325s] writing dependency_links to ../../../build/generation/generation.egg-info/dependency_links.txt
+[1.325s] writing entry points to ../../../build/generation/generation.egg-info/entry_points.txt
+[1.325s] writing requirements to ../../../build/generation/generation.egg-info/requires.txt
+[1.326s] writing top-level names to ../../../build/generation/generation.egg-info/top_level.txt
+[1.327s] reading manifest file '../../../build/generation/generation.egg-info/SOURCES.txt'
+[1.328s] writing manifest file '../../../build/generation/generation.egg-info/SOURCES.txt'
+[1.328s] running build
+[1.328s] running build_py
+[1.328s] running install
+[1.328s] running install_lib
+[1.329s] creating /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.329s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/test.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.329s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/convex_mpc.back2.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.329s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/test2.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.329s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/convex_mpc.back.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.329s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/pinocchio_interface.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.330s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/convex_mpc.back3.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.330s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/convex_mpc.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.330s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/trajectory_generation.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.330s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/__init__.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.330s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/foothold_optimization.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.330s] copying /home/wbb/ros2_ws/build/generation/build/lib/generation/test3.py -> /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation
+[1.330s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/test.py to test.cpython-310.pyc
+[1.330s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/convex_mpc.back2.py to convex_mpc.back2.cpython-310.pyc
+[1.332s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/test2.py to test2.cpython-310.pyc
+[1.332s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/convex_mpc.back.py to convex_mpc.back.cpython-310.pyc
+[1.334s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/pinocchio_interface.py to pinocchio_interface.cpython-310.pyc
+[1.335s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/convex_mpc.back3.py to convex_mpc.back3.cpython-310.pyc
+[1.337s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/convex_mpc.py to convex_mpc.cpython-310.pyc
+[1.339s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/trajectory_generation.py to trajectory_generation.cpython-310.pyc
+[1.340s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/__init__.py to __init__.cpython-310.pyc
+[1.340s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/foothold_optimization.py to foothold_optimization.cpython-310.pyc
+[1.340s] byte-compiling /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation/test3.py to test3.cpython-310.pyc
+[1.341s] running install_data
+[1.341s] creating /home/wbb/ros2_ws/install/generation/share/ament_index
+[1.341s] creating /home/wbb/ros2_ws/install/generation/share/ament_index/resource_index
+[1.341s] creating /home/wbb/ros2_ws/install/generation/share/ament_index/resource_index/packages
+[1.341s] copying resource/generation -> /home/wbb/ros2_ws/install/generation/share/ament_index/resource_index/packages
+[1.341s] copying package.xml -> /home/wbb/ros2_ws/install/generation/share/generation
+[1.341s] running install_egg_info
+[1.342s] Copying ../../../build/generation/generation.egg-info to /home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages/generation-0.0.0-py3.10.egg-info
+[1.342s] running install_scripts
+[1.355s] writing list of installed files to '/home/wbb/ros2_ws/build/generation/install.log'
+[1.374s] Invoked command in '/home/wbb/ros2_ws/src/motion/generation' returned '0': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/generation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/generation build --build-base /home/wbb/ros2_ws/build/generation/build install --record /home/wbb/ros2_ws/build/generation/install.log --single-version-externally-managed install_data

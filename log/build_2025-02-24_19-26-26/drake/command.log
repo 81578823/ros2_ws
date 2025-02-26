@@ -1,0 +1,2 @@
+Invoking command in '/home/wbb/ros2_ws/build/drake': /usr/bin/cmake /home/wbb/ros2_ws/env/lib/python3.10/site-packages/pydrake/share/drake -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/wbb/ros2_ws/install/drake
+Invoked command in '/home/wbb/ros2_ws/build/drake' returned '1': /usr/bin/cmake /home/wbb/ros2_ws/env/lib/python3.10/site-packages/pydrake/share/drake -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/wbb/ros2_ws/install/drake

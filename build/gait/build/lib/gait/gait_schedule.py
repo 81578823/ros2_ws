@@ -110,6 +110,7 @@ class GaitSchedule:
         # 将事件相位标准化到[0, 1]
         end_phase = eventPhases[-1]
         duration = end_phase
+        # print(f"end_phase: {end_phase}")
         if not self.almost_eq(end_phase, 1.0) and end_phase > 1e-9:
             eventPhases = [phase / end_phase for phase in eventPhases]
 

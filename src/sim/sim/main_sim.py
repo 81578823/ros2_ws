@@ -51,6 +51,9 @@ def physics_loop(sim: Simulate):
         # 如果全局 stop_flag 变成 True，则要求退出
         if stop_flag:
             sim.exitrequest.set()
+            rclpy.shutdown()
+
+            break
 
     print("[Python Sim Main] Physics thread loop ended. Cleanup is needed.")
     # 在这里做类似于 free(ctrlnoise) / mj_deleteData / mj_deleteModel 的释放工作
@@ -143,11 +146,12 @@ def main(args=None):
     # print("sim_publisher.actuator_cmds_buffer_",sim_publisher.actuator_cmds_buffer_.actuators_name)
     sim.sim_publisher = sim_publisher  # 让Simulate知道SimPublisher实例
     sim.actuator_cmds_buffer = sim_publisher.get_cmds_buffer()
-    # sim.m_.opt.timestep = 0.005
-    print(f"Time step: {sim.m_.opt.timestep}")
+    # sim.m_.opt.timestep = 0.001
+    # print(f"Time step: {sim.m_.opt.timestep}")
 
     if sim.m_ is None:
         print(f"Failed to load model: {sim.load_error}")
+        stop_flag = True
         sys.exit(1)
     # 启动物理仿真线程
     physics_thread = threading.Thread(target=physics_loop, args=(sim,), daemon=True)
@@ -156,6 +160,7 @@ def main(args=None):
     rclpy.spin(sim_publisher)    
 
     # 请求退出仿真
+    stop_flag = True
     sim.exitrequest.set()
     sim.run = False
 

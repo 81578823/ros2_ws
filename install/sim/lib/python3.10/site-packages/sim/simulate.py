@@ -7,6 +7,8 @@ import numpy as np
 from collections import deque
 from threading import Lock
 import time
+import rclpy
+
 class Simulate:
     """
     Simulate 类用于管理MuJoCo仿真，包括加载模型、初始化数据等。
@@ -116,7 +118,7 @@ class Simulate:
         """
         执行单步仿真，并应用控制命令。
         """
-
+        # self.m_.opt.timestep = 0.001
         # 执行仿真步进
         with self.mtx:
             if self.run and (self.m_ is not None) and (self.d_ is not None):
@@ -137,3 +139,7 @@ class Simulate:
                         # 确保每一步都更新显示
                     except Exception as e:
                         print(f"Viewer sync failed: {e}")
+                else:
+                    self.exitrequest.set()
+                    self.run = False
+                    rclpy.shutdown()

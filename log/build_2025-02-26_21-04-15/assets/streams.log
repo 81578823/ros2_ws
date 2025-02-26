@@ -1,0 +1,42 @@
+[0.748s] Invoking command in '/home/wbb/ros2_ws/src/assets': PYTHONPATH=/home/wbb/ros2_ws/build/assets/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assets build --build-base /home/wbb/ros2_ws/build/assets/build install --record /home/wbb/ros2_ws/build/assets/install.log --single-version-externally-managed install_data
+[0.886s] running egg_info
+[0.887s] writing ../../build/assets/assets.egg-info/PKG-INFO
+[0.887s] writing dependency_links to ../../build/assets/assets.egg-info/dependency_links.txt
+[0.887s] writing entry points to ../../build/assets/assets.egg-info/entry_points.txt
+[0.888s] writing requirements to ../../build/assets/assets.egg-info/requires.txt
+[0.888s] writing top-level names to ../../build/assets/assets.egg-info/top_level.txt
+[0.889s] reading manifest file '../../build/assets/assets.egg-info/SOURCES.txt'
+[0.889s] writing manifest file '../../build/assets/assets.egg-info/SOURCES.txt'
+[0.889s] running build
+[0.889s] running install
+[0.890s] running install_data
+[0.890s] creating /home/wbb/ros2_ws/install/assets/share/assets/p1
+[0.890s] copying share/assets/p1/PF_A1.xml -> /home/wbb/ros2_ws/install/assets/share/assets/p1
+[0.890s] copying share/assets/p1/config.yaml -> /home/wbb/ros2_ws/install/assets/share/assets/p1
+[0.891s] copying share/assets/p1/PF_A.urdf -> /home/wbb/ros2_ws/install/assets/share/assets/p1
+[0.891s] copying share/assets/p1/PF_A.xml -> /home/wbb/ros2_ws/install/assets/share/assets/p1
+[0.891s] creating /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.891s] copying share/assets/p1/meshes/foot_left_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.891s] copying share/assets/p1/meshes/abad_right_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.892s] copying share/assets/p1/meshes/foot_right_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.892s] copying share/assets/p1/meshes/abad_right_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.893s] copying share/assets/p1/meshes/foot_left_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.893s] copying share/assets/p1/meshes/knee_right_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.893s] copying share/assets/p1/meshes/base_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.896s] copying share/assets/p1/meshes/abad_left_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.896s] copying share/assets/p1/meshes/base_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.896s] copying share/assets/p1/meshes/hip_left_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.896s] copying share/assets/p1/meshes/knee_right_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.897s] copying share/assets/p1/meshes/foot_right_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.897s] copying share/assets/p1/meshes/hip_right_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.901s] copying share/assets/p1/meshes/abad_left_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.904s] copying share/assets/p1/meshes/hip_right_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.904s] copying share/assets/p1/meshes/hip_left_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.907s] copying share/assets/p1/meshes/knee_left_link.stl -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.907s] copying share/assets/p1/meshes/knee_left_link.STL -> /home/wbb/ros2_ws/install/assets/share/assets/p1/meshes
+[0.907s] copying package.xml -> /home/wbb/ros2_ws/install/assets/share/assets
+[0.907s] running install_egg_info
+[0.909s] Copying ../../build/assets/assets.egg-info to /home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages/assets-0.0.0-py3.10.egg-info
+[0.909s] running install_scripts
+[0.921s] writing list of installed files to '/home/wbb/ros2_ws/build/assets/install.log'
+[1.648s] Invoked command in '/home/wbb/ros2_ws/src/assets' returned '0': PYTHONPATH=/home/wbb/ros2_ws/build/assets/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assets build --build-base /home/wbb/ros2_ws/build/assets/build install --record /home/wbb/ros2_ws/build/assets/install.log --single-version-externally-managed install_data

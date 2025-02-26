@@ -1,0 +1,27 @@
+[0.559s] Invoking command in '/home/wbb/ros2_ws/build/visualization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/visualization -- -j16 -l16
+[0.584s] Invoked command in '/home/wbb/ros2_ws/build/visualization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/visualization -- -j16 -l16
+[0.594s] Invoking command in '/home/wbb/ros2_ws/build/visualization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --install /home/wbb/ros2_ws/build/visualization
+[0.601s] -- Install configuration: ""
+[0.601s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/launch
+[0.601s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/launch/a1_vis_launch.py
+[0.601s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/launch/aliengo_vis_launch.py
+[0.601s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/config
+[0.601s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/config/config.rviz
+[0.602s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/config/atlas_config.rviz
+[0.602s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/config/spot_config.rviz
+[0.602s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/ament_index/resource_index/package_run_dependencies/visualization
+[0.602s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/ament_index/resource_index/parent_prefix_path/visualization
+[0.602s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/ament_prefix_path.sh
+[0.602s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/ament_prefix_path.dsv
+[0.602s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/path.sh
+[0.603s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/environment/path.dsv
+[0.603s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/local_setup.bash
+[0.604s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/local_setup.sh
+[0.604s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/local_setup.zsh
+[0.604s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/local_setup.dsv
+[0.604s] -- Installing: /home/wbb/ros2_ws/install/visualization/share/visualization/package.dsv
+[0.604s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/ament_index/resource_index/packages/visualization
+[0.604s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/cmake/visualizationConfig.cmake
+[0.604s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/cmake/visualizationConfig-version.cmake
+[0.604s] -- Up-to-date: /home/wbb/ros2_ws/install/visualization/share/visualization/package.xml
+[0.605s] Invoked command in '/home/wbb/ros2_ws/build/visualization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --install /home/wbb/ros2_ws/build/visualization

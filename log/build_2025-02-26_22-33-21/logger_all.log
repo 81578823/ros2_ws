@@ -1,0 +1,684 @@
+[0.057s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.057s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7d5ac3f61600>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d5ac404f040>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d5ac404f040>>)
+[0.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.143s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.143s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/wbb/ros2_ws'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.143s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/assets) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/assets' with type 'ros.ament_python' and name 'assets'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extensions ['ignore', 'ignore_ament_install']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extension 'ignore'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extension 'ignore_ament_install'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extensions ['colcon_pkg']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extension 'colcon_pkg'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extensions ['colcon_meta']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extension 'colcon_meta'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extensions ['ros']
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/core) by extension 'ros'
+[0.152s] DEBUG:colcon.colcon_core.package_identification:Package 'src/core' with type 'ros.ament_python' and name 'core'
+[0.152s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extension 'ros'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extensions ['cmake', 'python']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extension 'cmake'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extension 'python'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extensions ['python_setup_py']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion) by extension 'python_setup_py'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extensions ['ignore', 'ignore_ament_install']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extension 'ignore'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extension 'ignore_ament_install'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extensions ['colcon_pkg']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extension 'colcon_pkg'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extensions ['colcon_meta']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extension 'colcon_meta'
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extensions ['ros']
+[0.153s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/control) by extension 'ros'
+[0.153s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motion/control' with type 'ros.ament_python' and name 'control'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/estimation) by extension 'ros'
+[0.154s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motion/estimation' with type 'ros.ament_python' and name 'estimation'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/gait) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motion/gait' with type 'ros.ament_python' and name 'gait'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extensions ['colcon_pkg']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extension 'colcon_pkg'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extensions ['colcon_meta']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extension 'colcon_meta'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extensions ['ros']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/generation) by extension 'ros'
+[0.155s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motion/generation' with type 'ros.ament_python' and name 'generation'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extensions ['ignore', 'ignore_ament_install']
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extension 'ignore'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extension 'ignore_ament_install'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion/management) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motion/management' with type 'ros.ament_python' and name 'management'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(src/sim) by extension 'ros'
+[0.156s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sim' with type 'ros.ament_python' and name 'sim'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/third_party) by extension 'ros'
+[0.157s] DEBUG:colcon.colcon_core.package_identification:Package 'src/third_party' with type 'ros.ament_python' and name 'third_party'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/trans) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/trans' with type 'ros.ament_cmake' and name 'trans'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/visualization) by extension 'ros'
+[0.158s] DEBUG:colcon.colcon_core.package_identification:Package 'src/visualization' with type 'ros.ament_cmake' and name 'visualization'
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.158s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.176s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.177s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/wbb/ros2_ws/install
+[0.178s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'cmake_target' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'cmake_clean_cache' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'cmake_clean_first' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'cmake_force_configure' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'ament_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'catkin_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'assets' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.197s] DEBUG:colcon.colcon_core.verb:Building package 'assets' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/assets', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/assets', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/assets', 'symlink_install': False, 'test_result_base': None}
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'cmake_target' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'cmake_clean_cache' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'cmake_clean_first' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'cmake_force_configure' from command line to 'False'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'ament_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'catkin_cmake_args' from command line to 'None'
+[0.197s] Level 5:colcon.colcon_core.verb:set package 'core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/core', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/core', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'third_party' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'third_party' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/third_party', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/third_party', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/third_party', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'trans' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'trans' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/trans', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/trans', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/trans', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'cmake_clean_first' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'cmake_force_configure' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'ament_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'visualization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.198s] DEBUG:colcon.colcon_core.verb:Building package 'visualization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/visualization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/visualization', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/visualization', 'symlink_install': False, 'test_result_base': None}
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_args' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target' from command line to 'None'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.198s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/control', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/motion/control', 'symlink_install': False, 'test_result_base': None}
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'cmake_target' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'estimation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'estimation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/estimation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/estimation', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/motion/estimation', 'symlink_install': False, 'test_result_base': None}
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'cmake_target' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'gait' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'gait' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/gait', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/gait', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/motion/gait', 'symlink_install': False, 'test_result_base': None}
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'cmake_target' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'cmake_clean_first' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'cmake_force_configure' from command line to 'False'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'ament_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.199s] Level 5:colcon.colcon_core.verb:set package 'generation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.199s] DEBUG:colcon.colcon_core.verb:Building package 'generation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/generation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/generation', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/motion/generation', 'symlink_install': False, 'test_result_base': None}
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'cmake_target' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'cmake_clean_cache' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'cmake_clean_first' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'cmake_force_configure' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'ament_cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'catkin_cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'management' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.200s] DEBUG:colcon.colcon_core.verb:Building package 'management' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/management', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/management', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/motion/management', 'symlink_install': False, 'test_result_base': None}
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'cmake_target' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'cmake_clean_first' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'cmake_force_configure' from command line to 'False'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'ament_cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.200s] Level 5:colcon.colcon_core.verb:set package 'sim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.200s] DEBUG:colcon.colcon_core.verb:Building package 'sim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/wbb/ros2_ws/build/sim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/wbb/ros2_ws/install/sim', 'merge_install': False, 'path': '/home/wbb/ros2_ws/src/sim', 'symlink_install': False, 'test_result_base': None}
+[0.200s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.201s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.201s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/core' with build type 'ament_python'
+[0.201s] Level 1:colcon.colcon_core.shell:create_environment_hook('core', 'ament_prefix_path')
+[0.202s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/core/share/core/hook/ament_prefix_path.ps1'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/core/share/core/hook/ament_prefix_path.dsv'
+[0.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/core/share/core/hook/ament_prefix_path.sh'
+[0.203s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.203s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.205s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/assets' with build type 'ament_python'
+[0.205s] Level 1:colcon.colcon_core.shell:create_environment_hook('assets', 'ament_prefix_path')
+[0.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/assets/share/assets/hook/ament_prefix_path.ps1'
+[0.205s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/assets/share/assets/hook/ament_prefix_path.dsv'
+[0.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/assets/share/assets/hook/ament_prefix_path.sh'
+[0.206s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.206s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.207s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/third_party' with build type 'ament_python'
+[0.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('third_party', 'ament_prefix_path')
+[0.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/third_party/share/third_party/hook/ament_prefix_path.ps1'
+[0.227s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/third_party/share/third_party/hook/ament_prefix_path.dsv'
+[0.227s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/third_party/share/third_party/hook/ament_prefix_path.sh'
+[0.227s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.227s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.229s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wbb/ros2_ws/src/trans' with build type 'ament_cmake'
+[0.229s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wbb/ros2_ws/src/trans'
+[0.230s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.230s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.231s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/wbb/ros2_ws/src/visualization' with build type 'ament_cmake'
+[0.232s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/wbb/ros2_ws/src/visualization'
+[0.232s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.232s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.375s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/core'
+[0.375s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.375s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.521s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'assets' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[0.521s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/assets'
+[0.521s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.521s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.670s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/third_party'
+[0.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.671s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/build/trans': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/trans -- -j16 -l16
+[0.678s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/build/visualization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/visualization -- -j16 -l16
+[0.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/build/visualization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/visualization -- -j16 -l16
+[0.728s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/build/visualization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --install /home/wbb/ros2_ws/build/visualization
+[0.740s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(visualization)
+[0.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/build/visualization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --install /home/wbb/ros2_ws/build/visualization
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization' for CMake module files
+[0.742s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization' for CMake config files
+[0.742s] Level 1:colcon.colcon_core.shell:create_environment_hook('visualization', 'cmake_prefix_path')
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/visualization/share/visualization/hook/cmake_prefix_path.ps1'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/visualization/share/visualization/hook/cmake_prefix_path.dsv'
+[0.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/visualization/share/visualization/hook/cmake_prefix_path.sh'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization/bin'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization/lib/pkgconfig/visualization.pc'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization/lib/python3.10/site-packages'
+[0.744s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization/bin'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/visualization/share/visualization/package.ps1'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/visualization/share/visualization/package.dsv'
+[0.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/visualization/share/visualization/package.sh'
+[0.746s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/visualization/share/visualization/package.bash'
+[0.747s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/visualization/share/visualization/package.zsh'
+[0.747s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/visualization/share/colcon-core/packages/visualization)
+[0.748s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(visualization)
+[0.748s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization' for CMake module files
+[0.749s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization' for CMake config files
+[0.749s] Level 1:colcon.colcon_core.shell:create_environment_hook('visualization', 'cmake_prefix_path')
+[0.749s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/visualization/share/visualization/hook/cmake_prefix_path.ps1'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/visualization/share/visualization/hook/cmake_prefix_path.dsv'
+[0.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/visualization/share/visualization/hook/cmake_prefix_path.sh'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization/bin'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization/lib/pkgconfig/visualization.pc'
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization/lib/python3.10/site-packages'
+[0.752s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/visualization/bin'
+[0.753s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/visualization/share/visualization/package.ps1'
+[0.753s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/visualization/share/visualization/package.dsv'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/visualization/share/visualization/package.sh'
+[0.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/visualization/share/visualization/package.bash'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/visualization/share/visualization/package.zsh'
+[0.755s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/visualization/share/colcon-core/packages/visualization)
+[0.913s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/assets': PYTHONPATH=/home/wbb/ros2_ws/build/assets/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assets build --build-base /home/wbb/ros2_ws/build/assets/build install --record /home/wbb/ros2_ws/build/assets/install.log --single-version-externally-managed install_data
+[0.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/core': PYTHONPATH=/home/wbb/ros2_ws/build/core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/core build --build-base /home/wbb/ros2_ws/build/core/build install --record /home/wbb/ros2_ws/build/core/install.log --single-version-externally-managed install_data
+[0.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/build/trans' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --build /home/wbb/ros2_ws/build/trans -- -j16 -l16
+[0.933s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/build/trans': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --install /home/wbb/ros2_ws/build/trans
+[0.975s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(trans)
+[0.975s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans' for CMake module files
+[0.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/build/trans' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/opt/ros/humble /usr/bin/cmake --install /home/wbb/ros2_ws/build/trans
+[0.977s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans' for CMake config files
+[0.977s] Level 1:colcon.colcon_core.shell:create_environment_hook('trans', 'cmake_prefix_path')
+[0.977s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/trans/share/trans/hook/cmake_prefix_path.ps1'
+[0.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/trans/share/trans/hook/cmake_prefix_path.dsv'
+[0.978s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/trans/share/trans/hook/cmake_prefix_path.sh'
+[0.979s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/lib'
+[0.979s] Level 1:colcon.colcon_core.shell:create_environment_hook('trans', 'ld_library_path_lib')
+[0.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/trans/share/trans/hook/ld_library_path_lib.ps1'
+[0.980s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/trans/share/trans/hook/ld_library_path_lib.dsv'
+[0.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/trans/share/trans/hook/ld_library_path_lib.sh'
+[0.981s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/bin'
+[0.981s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/lib/pkgconfig/trans.pc'
+[0.981s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/lib/python3.10/site-packages'
+[0.981s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/bin'
+[0.982s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/trans/share/trans/package.ps1'
+[0.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/trans/share/trans/package.dsv'
+[0.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/trans/share/trans/package.sh'
+[0.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/trans/share/trans/package.bash'
+[0.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/trans/share/trans/package.zsh'
+[0.984s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/trans/share/colcon-core/packages/trans)
+[0.985s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(trans)
+[0.985s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans' for CMake module files
+[0.986s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans' for CMake config files
+[0.986s] Level 1:colcon.colcon_core.shell:create_environment_hook('trans', 'cmake_prefix_path')
+[0.986s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/trans/share/trans/hook/cmake_prefix_path.ps1'
+[0.987s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/trans/share/trans/hook/cmake_prefix_path.dsv'
+[0.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/trans/share/trans/hook/cmake_prefix_path.sh'
+[0.988s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/lib'
+[0.988s] Level 1:colcon.colcon_core.shell:create_environment_hook('trans', 'ld_library_path_lib')
+[0.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/trans/share/trans/hook/ld_library_path_lib.ps1'
+[0.988s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/trans/share/trans/hook/ld_library_path_lib.dsv'
+[0.989s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/trans/share/trans/hook/ld_library_path_lib.sh'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/bin'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/lib/pkgconfig/trans.pc'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/lib/python3.10/site-packages'
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/trans/bin'
+[0.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/trans/share/trans/package.ps1'
+[0.990s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/trans/share/trans/package.dsv'
+[0.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/trans/share/trans/package.sh'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/trans/share/trans/package.bash'
+[0.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/trans/share/trans/package.zsh'
+[0.991s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/trans/share/colcon-core/packages/trans)
+[0.995s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/third_party': PYTHONPATH=/home/wbb/ros2_ws/build/third_party/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/third_party build --build-base /home/wbb/ros2_ws/build/third_party/build install --record /home/wbb/ros2_ws/build/third_party/install.log --single-version-externally-managed install_data
+[1.104s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/core' for CMake module files
+[1.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/core' returned '0': PYTHONPATH=/home/wbb/ros2_ws/build/core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/core build --build-base /home/wbb/ros2_ws/build/core/build install --record /home/wbb/ros2_ws/build/core/install.log --single-version-externally-managed install_data
+[1.104s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/core' for CMake config files
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/core/lib'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/core/bin'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/core/lib/pkgconfig/core.pc'
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages'
+[1.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('core', 'pythonpath')
+[1.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/core/share/core/hook/pythonpath.ps1'
+[1.105s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/core/share/core/hook/pythonpath.dsv'
+[1.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/core/share/core/hook/pythonpath.sh'
+[1.106s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/core/bin'
+[1.106s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(core)
+[1.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/core/share/core/package.ps1'
+[1.106s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/core/share/core/package.dsv'
+[1.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/core/share/core/package.sh'
+[1.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/core/share/core/package.bash'
+[1.107s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/core/share/core/package.zsh'
+[1.107s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/core/share/colcon-core/packages/core)
+[1.107s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/motion/estimation' with build type 'ament_python'
+[1.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('estimation', 'ament_prefix_path')
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/estimation/share/estimation/hook/ament_prefix_path.ps1'
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/estimation/share/estimation/hook/ament_prefix_path.dsv'
+[1.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/estimation/share/estimation/hook/ament_prefix_path.sh'
+[1.109s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.109s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.111s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/motion/gait' with build type 'ament_python'
+[1.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('gait', 'ament_prefix_path')
+[1.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/gait/share/gait/hook/ament_prefix_path.ps1'
+[1.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/gait/share/gait/hook/ament_prefix_path.dsv'
+[1.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/gait/share/gait/hook/ament_prefix_path.sh'
+[1.112s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.112s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.114s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/motion/generation' with build type 'ament_python'
+[1.114s] Level 1:colcon.colcon_core.shell:create_environment_hook('generation', 'ament_prefix_path')
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/generation/share/generation/hook/ament_prefix_path.ps1'
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/generation/share/generation/hook/ament_prefix_path.dsv'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/generation/share/generation/hook/ament_prefix_path.sh'
+[1.115s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.115s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.117s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/motion/management' with build type 'ament_python'
+[1.117s] Level 1:colcon.colcon_core.shell:create_environment_hook('management', 'ament_prefix_path')
+[1.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/management/share/management/hook/ament_prefix_path.ps1'
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/management/share/management/hook/ament_prefix_path.dsv'
+[1.118s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/management/share/management/hook/ament_prefix_path.sh'
+[1.118s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.118s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.120s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/sim' with build type 'ament_python'
+[1.120s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim', 'ament_prefix_path')
+[1.120s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/sim/share/sim/hook/ament_prefix_path.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/sim/share/sim/hook/ament_prefix_path.dsv'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/sim/share/sim/hook/ament_prefix_path.sh'
+[1.121s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.121s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/assets' for CMake module files
+[1.124s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/assets' returned '0': PYTHONPATH=/home/wbb/ros2_ws/build/assets/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/assets build --build-base /home/wbb/ros2_ws/build/assets/build install --record /home/wbb/ros2_ws/build/assets/install.log --single-version-externally-managed install_data
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/assets' for CMake config files
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/assets/lib'
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/assets/bin'
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/assets/lib/pkgconfig/assets.pc'
+[1.126s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages'
+[1.126s] Level 1:colcon.colcon_core.shell:create_environment_hook('assets', 'pythonpath')
+[1.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/assets/share/assets/hook/pythonpath.ps1'
+[1.126s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/assets/share/assets/hook/pythonpath.dsv'
+[1.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/assets/share/assets/hook/pythonpath.sh'
+[1.127s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/assets/bin'
+[1.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(assets)
+[1.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/assets/share/assets/package.ps1'
+[1.128s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/assets/share/assets/package.dsv'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/assets/share/assets/package.sh'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/assets/share/assets/package.bash'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/assets/share/assets/package.zsh'
+[1.130s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/assets/share/colcon-core/packages/assets)
+[1.276s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/motion/estimation'
+[1.276s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.277s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.423s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/motion/gait'
+[1.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.567s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/motion/generation'
+[1.567s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.567s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.570s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/wbb/ros2_ws/src/motion/control' with build type 'ament_python'
+[1.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'ament_prefix_path')
+[1.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/control/share/control/hook/ament_prefix_path.ps1'
+[1.570s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/control/share/control/hook/ament_prefix_path.dsv'
+[1.570s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/control/share/control/hook/ament_prefix_path.sh'
+[1.571s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.571s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.716s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'management' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[1.717s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/motion/management'
+[1.717s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.717s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.864s] WARNING:colcon.colcon_ros.task.ament_python.build:Package 'sim' doesn't explicitly install a marker in the package index (colcon-ros currently does it implicitly but that fallback will be removed in the future)
+[1.864s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/sim'
+[1.864s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.864s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/third_party' for CMake module files
+[1.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/third_party' returned '0': PYTHONPATH=/home/wbb/ros2_ws/build/third_party/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/third_party build --build-base /home/wbb/ros2_ws/build/third_party/build install --record /home/wbb/ros2_ws/build/third_party/install.log --single-version-externally-managed install_data
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/third_party' for CMake config files
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/third_party/lib'
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/third_party/bin'
+[1.867s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/third_party/lib/pkgconfig/third_party.pc'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages'
+[1.868s] Level 1:colcon.colcon_core.shell:create_environment_hook('third_party', 'pythonpath')
+[1.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/third_party/share/third_party/hook/pythonpath.ps1'
+[1.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/third_party/share/third_party/hook/pythonpath.dsv'
+[1.868s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/third_party/share/third_party/hook/pythonpath.sh'
+[1.868s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/third_party/bin'
+[1.868s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(third_party)
+[1.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/third_party/share/third_party/package.ps1'
+[1.869s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/third_party/share/third_party/package.dsv'
+[1.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/third_party/share/third_party/package.sh'
+[1.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/third_party/share/third_party/package.bash'
+[1.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/third_party/share/third_party/package.zsh'
+[1.870s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/third_party/share/colcon-core/packages/third_party)
+[2.025s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/wbb/ros2_ws/src/motion/control'
+[2.025s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/motion/gait': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/gait/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gait build --build-base /home/wbb/ros2_ws/build/gait/build install --record /home/wbb/ros2_ws/build/gait/install.log --single-version-externally-managed install_data
+[2.115s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/motion/generation': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/generation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/generation build --build-base /home/wbb/ros2_ws/build/generation/build install --record /home/wbb/ros2_ws/build/generation/install.log --single-version-externally-managed install_data
+[2.122s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/motion/estimation': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/estimation build --build-base /home/wbb/ros2_ws/build/estimation/build install --record /home/wbb/ros2_ws/build/estimation/install.log --single-version-externally-managed install_data
+[2.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/sim': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim build --build-base /home/wbb/ros2_ws/build/sim/build install --record /home/wbb/ros2_ws/build/sim/install.log --single-version-externally-managed install_data
+[2.284s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/motion/management': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/management/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/management build --build-base /home/wbb/ros2_ws/build/management/build install --record /home/wbb/ros2_ws/build/management/install.log --single-version-externally-managed install_data
+[2.285s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/wbb/ros2_ws/src/motion/control': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/control build --build-base /home/wbb/ros2_ws/build/control/build install --record /home/wbb/ros2_ws/build/control/install.log --single-version-externally-managed install_data
+[2.302s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/gait' for CMake module files
+[2.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/motion/gait' returned '0': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/gait/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/gait build --build-base /home/wbb/ros2_ws/build/gait/build install --record /home/wbb/ros2_ws/build/gait/install.log --single-version-externally-managed install_data
+[2.303s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/gait' for CMake config files
+[2.303s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/gait/lib'
+[2.303s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/gait/bin'
+[2.303s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/gait/lib/pkgconfig/gait.pc'
+[2.303s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages'
+[2.303s] Level 1:colcon.colcon_core.shell:create_environment_hook('gait', 'pythonpath')
+[2.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/gait/share/gait/hook/pythonpath.ps1'
+[2.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/gait/share/gait/hook/pythonpath.dsv'
+[2.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/gait/share/gait/hook/pythonpath.sh'
+[2.304s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/gait/bin'
+[2.304s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gait)
+[2.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/gait/share/gait/package.ps1'
+[2.305s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/gait/share/gait/package.dsv'
+[2.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/gait/share/gait/package.sh'
+[2.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/gait/share/gait/package.bash'
+[2.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/gait/share/gait/package.zsh'
+[2.306s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/gait/share/colcon-core/packages/gait)
+[2.360s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/generation' for CMake module files
+[2.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/motion/generation' returned '0': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/generation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/generation build --build-base /home/wbb/ros2_ws/build/generation/build install --record /home/wbb/ros2_ws/build/generation/install.log --single-version-externally-managed install_data
+[2.360s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/generation' for CMake config files
+[2.360s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/generation/lib'
+[2.360s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/generation/bin'
+[2.361s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/generation/lib/pkgconfig/generation.pc'
+[2.361s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages'
+[2.361s] Level 1:colcon.colcon_core.shell:create_environment_hook('generation', 'pythonpath')
+[2.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/generation/share/generation/hook/pythonpath.ps1'
+[2.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/generation/share/generation/hook/pythonpath.dsv'
+[2.361s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/generation/share/generation/hook/pythonpath.sh'
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/generation/bin'
+[2.362s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(generation)
+[2.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/generation/share/generation/package.ps1'
+[2.362s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/generation/share/generation/package.dsv'
+[2.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/generation/share/generation/package.sh'
+[2.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/generation/share/generation/package.bash'
+[2.363s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/generation/share/generation/package.zsh'
+[2.363s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/generation/share/colcon-core/packages/generation)
+[2.402s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/estimation' for CMake module files
+[2.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/motion/estimation' returned '0': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/estimation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/estimation build --build-base /home/wbb/ros2_ws/build/estimation/build install --record /home/wbb/ros2_ws/build/estimation/install.log --single-version-externally-managed install_data
+[2.403s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/estimation' for CMake config files
+[2.403s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/estimation/lib'
+[2.403s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/estimation/bin'
+[2.403s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/estimation/lib/pkgconfig/estimation.pc'
+[2.403s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages'
+[2.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('estimation', 'pythonpath')
+[2.404s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/estimation/share/estimation/hook/pythonpath.ps1'
+[2.404s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/estimation/share/estimation/hook/pythonpath.dsv'
+[2.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/estimation/share/estimation/hook/pythonpath.sh'
+[2.405s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/estimation/bin'
+[2.405s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(estimation)
+[2.405s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/estimation/share/estimation/package.ps1'
+[2.406s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/estimation/share/estimation/package.dsv'
+[2.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/estimation/share/estimation/package.sh'
+[2.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/estimation/share/estimation/package.bash'
+[2.407s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/estimation/share/estimation/package.zsh'
+[2.408s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/estimation/share/colcon-core/packages/estimation)
+[2.456s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/sim' for CMake module files
+[2.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/sim' returned '0': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/sim build --build-base /home/wbb/ros2_ws/build/sim/build install --record /home/wbb/ros2_ws/build/sim/install.log --single-version-externally-managed install_data
+[2.457s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/sim' for CMake config files
+[2.457s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/sim/lib'
+[2.457s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/sim/bin'
+[2.458s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/sim/lib/pkgconfig/sim.pc'
+[2.458s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages'
+[2.458s] Level 1:colcon.colcon_core.shell:create_environment_hook('sim', 'pythonpath')
+[2.458s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/sim/share/sim/hook/pythonpath.ps1'
+[2.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/sim/share/sim/hook/pythonpath.dsv'
+[2.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/sim/share/sim/hook/pythonpath.sh'
+[2.459s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/sim/bin'
+[2.459s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sim)
+[2.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/sim/share/sim/package.ps1'
+[2.460s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/sim/share/sim/package.dsv'
+[2.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/sim/share/sim/package.sh'
+[2.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/sim/share/sim/package.bash'
+[2.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/sim/share/sim/package.zsh'
+[2.462s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/sim/share/colcon-core/packages/sim)
+[2.463s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/management' for CMake module files
+[2.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/motion/management' returned '0': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/home/wbb/ros2_ws/install/assets:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/management/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/management build --build-base /home/wbb/ros2_ws/build/management/build install --record /home/wbb/ros2_ws/build/management/install.log --single-version-externally-managed install_data
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/management' for CMake config files
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/management/lib'
+[2.465s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/management/bin'
+[2.465s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/management/lib/pkgconfig/management.pc'
+[2.465s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages'
+[2.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('management', 'pythonpath')
+[2.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/management/share/management/hook/pythonpath.ps1'
+[2.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/management/share/management/hook/pythonpath.dsv'
+[2.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/management/share/management/hook/pythonpath.sh'
+[2.467s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/management/bin'
+[2.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(management)
+[2.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/management/share/management/package.ps1'
+[2.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/management/share/management/package.dsv'
+[2.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/management/share/management/package.sh'
+[2.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/management/share/management/package.bash'
+[2.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/management/share/management/package.zsh'
+[2.470s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/management/share/colcon-core/packages/management)
+[2.496s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/control' for CMake module files
+[2.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/wbb/ros2_ws/src/motion/control' returned '0': AMENT_PREFIX_PATH=/home/wbb/ros2_ws/install/core:/home/wbb/ros2_ws/install/assets:/home/wbb/ros2_ws/install/visualization:/home/wbb/ros2_ws/install/trans:/home/wbb/ros2_ws/install/third_party:/home/wbb/ros2_ws/install/sim:/home/wbb/ros2_ws/install/management:/home/wbb/ros2_ws/install/generation:/home/wbb/ros2_ws/install/gait:/home/wbb/ros2_ws/install/estimation:/home/wbb/ros2_ws/install/control:/opt/ros/humble PYTHONPATH=/home/wbb/ros2_ws/build/control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/assets/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/trans/local/lib/python3.10/dist-packages:/home/wbb/ros2_ws/install/third_party/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/sim/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/management/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/generation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/gait/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/estimation/lib/python3.10/site-packages:/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/control build --build-base /home/wbb/ros2_ws/build/control/build install --record /home/wbb/ros2_ws/build/control/install.log --single-version-externally-managed install_data
+[2.496s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/control' for CMake config files
+[2.497s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/control/lib'
+[2.497s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/control/bin'
+[2.497s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/control/lib/pkgconfig/control.pc'
+[2.497s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/control/lib/python3.10/site-packages'
+[2.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('control', 'pythonpath')
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/control/share/control/hook/pythonpath.ps1'
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/wbb/ros2_ws/install/control/share/control/hook/pythonpath.dsv'
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/wbb/ros2_ws/install/control/share/control/hook/pythonpath.sh'
+[2.499s] Level 1:colcon.colcon_core.environment:checking '/home/wbb/ros2_ws/install/control/bin'
+[2.499s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(control)
+[2.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/control/share/control/package.ps1'
+[2.500s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/wbb/ros2_ws/install/control/share/control/package.dsv'
+[2.500s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/control/share/control/package.sh'
+[2.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/control/share/control/package.bash'
+[2.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/wbb/ros2_ws/install/control/share/control/package.zsh'
+[2.502s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/wbb/ros2_ws/install/control/share/colcon-core/packages/control)
+[2.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.502s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.508s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.508s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.508s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.515s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.515s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wbb/ros2_ws/install/local_setup.ps1'
+[2.516s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wbb/ros2_ws/install/_local_setup_util_ps1.py'
+[2.517s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wbb/ros2_ws/install/setup.ps1'
+[2.517s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wbb/ros2_ws/install/local_setup.sh'
+[2.517s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/wbb/ros2_ws/install/_local_setup_util_sh.py'
+[2.518s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wbb/ros2_ws/install/setup.sh'
+[2.518s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wbb/ros2_ws/install/local_setup.bash'
+[2.519s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wbb/ros2_ws/install/setup.bash'
+[2.519s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/wbb/ros2_ws/install/local_setup.zsh'
+[2.519s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/wbb/ros2_ws/install/setup.zsh'

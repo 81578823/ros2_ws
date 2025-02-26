@@ -1,0 +1,20 @@
+[0.682s] Invoking command in '/home/wbb/ros2_ws/src/core': PYTHONPATH=/home/wbb/ros2_ws/build/core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/core build --build-base /home/wbb/ros2_ws/build/core/build install --record /home/wbb/ros2_ws/build/core/install.log --single-version-externally-managed install_data
+[0.837s] running egg_info
+[0.837s] writing ../../build/core/core.egg-info/PKG-INFO
+[0.837s] writing dependency_links to ../../build/core/core.egg-info/dependency_links.txt
+[0.837s] writing entry points to ../../build/core/core.egg-info/entry_points.txt
+[0.838s] writing requirements to ../../build/core/core.egg-info/requires.txt
+[0.838s] writing top-level names to ../../build/core/core.egg-info/top_level.txt
+[0.840s] reading manifest file '../../build/core/core.egg-info/SOURCES.txt'
+[0.841s] writing manifest file '../../build/core/core.egg-info/SOURCES.txt'
+[0.841s] running build
+[0.841s] running build_py
+[0.842s] running install
+[0.842s] running install_lib
+[0.843s] running install_data
+[0.843s] running install_egg_info
+[0.844s] removing '/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages/core-0.0.0-py3.10.egg-info' (and everything under it)
+[0.844s] Copying ../../build/core/core.egg-info to /home/wbb/ros2_ws/install/core/lib/python3.10/site-packages/core-0.0.0-py3.10.egg-info
+[0.845s] running install_scripts
+[0.859s] writing list of installed files to '/home/wbb/ros2_ws/build/core/install.log'
+[0.876s] Invoked command in '/home/wbb/ros2_ws/src/core' returned '0': PYTHONPATH=/home/wbb/ros2_ws/build/core/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wbb/ros2_ws/install/core/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/core build --build-base /home/wbb/ros2_ws/build/core/build install --record /home/wbb/ros2_ws/build/core/install.log --single-version-externally-managed install_data
